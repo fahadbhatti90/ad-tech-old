@@ -1,0 +1,68 @@
+@import './../../../../sass/variables';
+
+.vendorCentral{
+  input[type=file] {
+    font:revert !important;
+  }
+  // Vendor Central Verify Page Btns
+  .verifyBtn{
+    margin-right: 10px !important;
+  }
+  .MuiPaper-root{
+    overflow: initial !important;
+  }
+  .vendorCentralFileUpload{
+    div:first-child{
+      position: relative;
+      bottom: 1px;
+    }
+  }
+  .vendorCentralTextField{
+    border: 1px solid #cac6c6 !important;
+    div:first-child {
+      border: none !important;
+      box-shadow: none !important;
+      outline: none;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    div:first-child input {
+      height: 15px !important;
+    }
+  }
+  .error{
+    margin: 0;
+    font-size: 90%;
+    color: tomato;
+  }
+
+  .vendorCentralGridElement:nth-child(odd) {
+    padding-right: 20px !important;
+  }
+
+  .vendorCentralGridElement:nth-child(even) {
+    padding-left: 20px !important;
+  }
+  // .MuiButton-root, .MuiButton-root:hover {
+  //   background-color: $primaryColor !important;
+  //   color: #ffff !important;
+  // }
+  .submitBtn{
+    margin-top: 33px !important;
+  }
+  .PoDropDownText{
+    margin-left: 10px !important;
+  }
+}
+.errorCustom{
+  margin: 0;
+  font-size: 90%;
+  // color: tomato;
+}
+.errorCustom .ThemeInput > div > div:nth-child(1) {
+  border: 1px solid tomato !important;
+}
+.errorCustom .ThemeSelect > .select__control  {
+  border: 1px solid tomato !important;
+}

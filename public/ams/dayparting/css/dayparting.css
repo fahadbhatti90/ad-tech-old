@@ -1,0 +1,211 @@
+/*
+#dayPartingHistoryTable_wrapper .row:nth-child(2)::-webkit-scrollbar-track
+{
+  background-color: #F5F5F5;
+} */
+
+#dayPartingHistoryTable_wrapper .row:nth-child(2) > div::-webkit-scrollbar
+{
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+#dayPartingHistoryTable_wrapper .row:nth-child(2) > div::-webkit-scrollbar-thumb
+{
+    background-color: #ccc;
+}
+.mainControls {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+    transform: translateY(0px);
+    transition: transform 0.3s ease;
+    padding: 0 10px;
+    display: flex;
+    border: 1px solid #d1d3e2;
+    border-radius: 5px;
+}
+
+.mainControls > label {
+    flex: 2;
+}
+
+.mainControls > .emailInputArea > h6 {
+    margin: 0;
+}
+.autoHeight{
+    /* height: auto !important; */
+    max-width: 300px !important;
+}
+#dayPartingHistoryTable_wrapper th,
+#dayPartingHistoryTable_wrapper td{
+    white-space: nowrap;
+}
+#dayPartingHistoryTable_wrapper .row:nth-child(2) > div{
+    overflow-x: auto;
+}
+.autoHeight li.active{
+    box-shadow: 0px 22px 104px -6px rgba(0, 0, 0, 0.34);
+    border-radius: 3px;
+    padding: 6px;
+    width: 100%;
+    /* transform: translateX(-48px); */
+    /* list-style-type: none; */
+    cursor: default;
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -webkit-pre-wrap;          /* Chrome & Safari */
+    white-space: -pre-wrap;                 /* Opera 4-6 */
+    white-space: -o-pre-wrap;               /* Opera 7 */
+    white-space: pre-wrap;                  /* CSS3 */
+    word-wrap: break-word;                  /* Internet Explorer 5.5+ */
+    word-break: break-all;
+    white-space: normal;
+}
+
+.mainControls > button[type='submit'] {
+    background: transparent;
+    color: #333;
+    border-color: #d1d3e2;
+    border: 0;
+    box-shadow: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.emailInputArea {
+    flex: 1;
+}
+
+.mainControls.move {
+    transform: translateY(-40px);
+}
+
+.ccInputContainer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+    transform: translateY(40px);
+    transition: transform 0.3s ease;
+    display: flex;
+}
+
+.ccInputContainer.move {
+    transform: translateY(0px);
+}
+
+.customFormGroup {
+    overflow: hidden;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.ccInputContainer.anchorClass {
+    flex-basis: 30%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background: transparent;
+    color: #4e73df;
+    border-color: #d1d3e2;
+    border-left: 0;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+.ccInputContainer.ccInputField {
+    display: inline-block !important;
+    flex-basis: 70% !important;;
+    border-top-right-radius: 0 !important;;
+    border-bottom-right-radius: 0 !important;;
+    border-right: 0 !important;
+}
+
+.anchorClassNew{
+    color: #0f0f0f !important;
+    border-color: #5a5c69 !important;
+}
+.swal2-title {
+    color: #4e73df !important;
+    font-size: 1.25rem !important;
+}
+.required{
+    /*font-size: 15px;color:red;font-weight: bold;*/
+    top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+.custom-checkbox{
+    display: inline-block; !important;
+    margin-right: 30px !important;
+    margin-bottom: 6px !important;
+    margin-left: 10px !important;
+    /*margin: 10px;*/
+}
+.ccEmailAreaLable{
+    padding-top: 0px !important
+}
+
+.liTooltip{
+    cursor: pointer;
+}
+.tooltipster-sidetip .tooltipster-box{
+    background: #f9f8f8 !important;
+    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+    border-top-color: #f9f8f8 !important;
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+    border-top-color: #f9f8f8 !important;
+}
+.tooltipster-sidetip .tooltipster-content {
+    color: #0d0c0c !important;
+}
+.tooltip-dayParting{
+    list-style: decimal;
+    cursor: pointer;
+}
+table tbody i {
+    color: #0069d9;
+    cursor: pointer;
+    transition: color 0.1s ease;
+}
+.select2-selection__choice__remove{float: right !important; padding-left:5px;}
+.select2-container{width: 100% !important}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{background-color: #3f51b53d !important; color: #0000008f;}
+.custom-control-input:checked ~ .custom-control-label::before{border-color: #3f51b53d !important; background-color: #3f51b53d;}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after{background-image:url("../svg/checbox.svg")}
+.dayPartingActionBtn{width:65px !important}
+
+/*CC Email ADD */
+span.email-ids {margin-top: 2px;float: left;margin-left: 4px;border: 1px solid #ccc;margin-right: 4px;margin-bottom: 2px;background: #3f51b53d !important;padding: 2px 5px;border-radius: 5px;color: #0000008f;}
+span.cancel-email {border: 1px solid #ccc;width: 18px;display: block;float: right;text-align: center;margin-left: 5px;border-radius: 49%;height: 18px;line-height: 15px;margin-top: 1px;    cursor: pointer;}
+.email-id-row {border-radius: 4px;}
+.email-id-row input {border: 0; outline:0;}
+span.to-input {display: block;float: left;padding-right: 11px;}
+.email-id-row {padding-top: 2px;padding-bottom: 2px;}
+
+/*CC Email Edit*/
+span.email-ids-edit {margin-top: 2px;float: left;margin-left: 4px;border: 1px solid #ccc;margin-right: 4px;margin-bottom: 2px;background: #3f51b53d !important;padding: 2px 5px;border-radius: 5px;color: #0000008f;}
+select.swal2-select {max-width: 70% !important;}
+.swal-width{width: 750px !important}
+.swal2-radio{display: grid !important;}
+.swal2-checkbox label, .swal2-radio label {margin: 2px .6em!important;font-size: 1.0em !important; text-align: justify !important;}
+.timezone-offset{left: 5px; font-size: 9px}
+.card .card-header[data-toggle=collapse]::after{color:#4e73df !important; font-size: 21px}
+dl, ol, ul {
+    margin-top: 0 !important;
+    margin-bottom: .4rem !important;
+}
+/*.swal2-radio label{text-align: justify !important;}*/
+/*.swal2-checkbox input, .swal2-radio input{float: left !important; line-height: 20px !important}*/

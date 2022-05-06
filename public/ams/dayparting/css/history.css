@@ -1,0 +1,19 @@
+/* Day Parting History */
+.fc-content .fc-title {cursor: pointer !important;}
+#calendar .btn{    padding: 0.15rem 0.50rem; !important;  text-transform: capitalize;}
+#calendar .btn span{font-size: 12px !important}
+.fc-toolbar h2 {font-size: 1.2em !important;}
+.tooltipster-sidetip .tooltipster-content {color: #fbfafa !important;}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow{height: 0px !important}
+.tooltipster-sidetip .tooltipster-box {
+    background: #5076e1 !important;
+    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+.formHistory{margin-left: 10px !important;}
+.card .card-header[data-toggle=collapse]::after{color:#4e73df !important; font-size: 21px}

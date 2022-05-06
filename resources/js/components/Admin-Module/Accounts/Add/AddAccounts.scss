@@ -1,0 +1,97 @@
+#customized-dialog-title{
+    padding: 23px 16px 22px 16px !important;
+}
+
+
+$primaryColor : #571986;
+.EventsCheckbox {
+
+    fieldset{
+        width: 100%;
+        padding: 15px 30px;
+        margin:0;
+        // border:1px solid #c3bdbd8c;
+        background-color:transparent;
+        legend {
+            font-size: 0.8rem;
+            padding: 0px 10px;
+            margin-left: -10px;
+        }
+        .eventsCheckBoxGroup{
+            flex-direction: row;
+        }
+        .error {
+            margin: 0;
+            font-size: 90%;
+            color: tomato;
+            text-align:center;
+            display:none;
+        }
+        .customError{
+            .error{
+                display: block;
+            }
+        }
+    }
+}
+.manageEventForm{
+    .notesAndonContainer{
+        border: 1px solid #c3bdbd8c !important;
+        border-radius: 5px;
+        .andonTextArea{
+            border: none !important;
+            border-radius: 0px;
+            outline:none;
+        }
+    }
+    .disabledElement{
+        .select__control{
+            opacity: 0.5;
+            background: #0000000d;
+        }
+        .select__single-value--is-disabled{
+            color: #0000008f;
+        }
+        .dateRange{
+            & > div > div{
+                opacity: 0.5;
+                background: #0000000d;
+            }
+        }
+        .Mui-checked.eventCheckBox {
+            opacity:0.5
+        }
+    }
+    .smallSizeError {
+        font-size: 70%;
+    }
+    .notesCrapContainer{
+        border: 1px solid #c3bdbd8c !important;
+        border-radius: 5px;
+        .crapTextArea{
+            border: 0 !important;
+            border-radius: 0px;
+            outline:none;
+        }
+    }
+    .dateRange{
+        & > div > div{
+                border:1px solid #c3bdbd8c !important;
+        }
+    }
+    #dateRange{
+        color: #9a9999;
+    }
+}
+.asyncSelect{
+    .select__option--is-disabled{
+        padding: 0px;
+        .LoadMoreButton{
+            & > div {
+                color:$primaryColor;
+                text-align: center;
+                z-index: 999;
+            }
+        }
+    }
+}//end async select

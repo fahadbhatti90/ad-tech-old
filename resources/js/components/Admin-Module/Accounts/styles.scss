@@ -1,0 +1,20 @@
+.unAssociateModel{
+    #customized-dialog-title{
+        padding: 23px 16px 0 16px !important;
+    }
+}
+    .actionBtnsCenter{
+        justify-content: center !important;
+    }
+    // get the variable color
+    .btnHover{
+        color: #571986  !important;
+    }
+    .btnHover:hover {
+        color: #e1a23b !important;
+    }
+    .unAssociateAccountButton {
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }

@@ -1,0 +1,46 @@
+.amsSchedule{
+    .actionBtnsCenter{
+        justify-content: center !important;
+    }
+    // get the variable color
+    .btnHover{
+        color: #571986  !important;
+    }
+    .btnHover:hover {
+        color: #e1a23b !important;
+    }
+    .rdt_TableHeadRow .rdt_TableCol{
+      font-weight: 600;
+      background-color: #f1f1f1;
+    }
+    .rdt_TableHeader{
+      font-weight: 600;
+    }
+    .rdt_TableBody{
+      min-height: 140px !important;
+      max-height: 172px !important;
+      overflow-y: auto;
+  }
+}
+
+.errorCustom{
+    margin: 0;
+    font-size: 90%;
+    // color: tomato;
+  }
+  .errorCustom .ThemeInput > div > div:nth-child(1) {
+    border: 1px solid tomato !important;
+  }
+  .errorCustom .ThemeSelect > .select__control  {
+    border: 1px solid tomato !important;
+  }
+
+.Select.is-disabled > .Select-control {
+    cursor: not-allowed;
+    color: #aaa !important;
+  }
+    
+  .Select.is-disabled {
+    color: #aaa !important;
+    background: darkgray  !important;
+  }

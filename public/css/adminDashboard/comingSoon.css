@@ -1,0 +1,64 @@
+.coming-soon h1,h2{
+    color: #4e73df;
+    line-height: 1.16667;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgba(150,150,150,1);
+}
+
+.coming-soon h1 {
+    font-size: 43px;
+    font-family: Montserrat;
+    font-weight: 700;
+    border: 2px dashed #4e73df;
+    margin-top: 50px;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.coming-soon h1:hover {
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+    color: #6483e0;
+}
+
+.coming-soon h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 30px;
+    color: #4e73df;
+}
+
+.coming-soon .container {
+    width: 58%;
+    margin: 40px auto 0;
+}
+
+.coming-soon .details {
+    margin-top: 30px;
+    color: #4e73df;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(150,150,150,1);
+}
+
+/* Style the <hr> element */
+.coming-soon hr {
+    margin: auto;
+    width: 40%;
+  }
+.coming-soon #demo{
+    font-size: 44px;
+    text-align: center;
+    color: #4e73df;
+    border: 2px dashed #4e73df;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

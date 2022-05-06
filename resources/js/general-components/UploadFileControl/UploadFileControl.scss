@@ -1,0 +1,23 @@
+
+.browseFileButton{
+    top: 50%;
+    right: 2.6px;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    padding: 0px 15px 0px 15px;
+    border: none;
+    background: #00000024;
+    outline: none;
+    box-shadow: unset;
+    margin-top: 0.5px;
+    height: 29.9px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > div {
+      width: 15px !important;
+      height: 15px !important;
+      margin-left: 5px;
+    }
+}

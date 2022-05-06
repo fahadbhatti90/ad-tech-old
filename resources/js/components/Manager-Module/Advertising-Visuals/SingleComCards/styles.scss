@@ -1,0 +1,26 @@
+.innerPara {
+    padding:5px;
+    font-size: 0.73rem;
+    text-align: center;
+}
+
+legend{
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: fit-content;
+    margin-left: 6px;
+    padding: 0 10px;
+    // color: #
+}
+
+fieldset {
+    background: #fafafa;
+    padding: 10px 10px;
+    padding-bottom: 10px;
+    border-radius: 15px !important;
+}
+
+.border{
+    border: 1px solid;
+    border-color: #bdbdbd;
+}

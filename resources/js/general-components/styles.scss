@@ -1,0 +1,57 @@
+.heading{
+    font-weight:600 !important;
+    font-size: 1.5rem !important
+}
+
+.subHeading{
+    font-size: 0.7rem !important;
+}
+
+.icon{
+    cursor: pointer;
+    float: right;
+    font-size: 2rem;
+}
+
+.iconBtn{
+    outline: none !important;
+    float: right;
+}
+.divider{
+    margin: 5px 0px 25px !important;
+}
+
+.dateRangepicker{
+    position: absolute;
+    z-index: 11;
+}
+
+.select__placeholder {
+    color: #9a9a9a !important;
+    font-weight: 500;
+  }
+
+.dailog-header{
+    font-weight: 600 !important;
+    color: #610aa4;
+}
+
+
+
+.timepicker{
+    border: 1px solid #cfcbcb !important;
+    border-radius: 25px;
+    padding: 0px 10px !important;
+    &:hover{
+        border: 1px solid #9935c3 !important;
+    }
+}
+
+.asyncSelect{
+    .select__menu-list{
+        max-height: 200px;
+    }
+}
+#customized-dialog-title {
+    padding: 23px 16px 4px 16px !important;
+}

@@ -1,0 +1,52 @@
+
+@import './../../../../../sass/variables';
+
+.parentBrandsRadioButtons {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height:100px;
+    max-height: 100px;
+    margin: 9px 25px 0 25px;
+    fieldset {
+        display: flex;
+        padding: 0px 0px 0 10px;
+        flex-direction: column;
+        background: transparent;
+        .MuiSvgIcon-fontSizeSmall{
+            font-size: 1.25rem;
+        }
+
+        & > div {
+          justify-content: space-around;
+        }
+        label {
+            & > span {
+                padding: 4px 8px;
+            }
+            span:last-child{
+                font-size: 0.85rem;
+                font-family: $theme_font_family !important;
+            }
+        }
+    }
+}
+.GBSModel{
+    #customized-dialog-title{
+        padding: 32px 16px 7px 16px !important;
+        text-align:center;
+        p {
+            font-family: $theme_font_family !important;
+        }
+    }
+    .GBSForm {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        .MuiLinearProgress-barColorPrimary {
+            background-color: $primaryColor; 
+        }
+    }
+    .MuiDialogContent-root{
+        border:none;
+        padding-top: 0px;
+    }
+}

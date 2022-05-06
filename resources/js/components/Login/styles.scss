@@ -1,0 +1,15 @@
+.login {
+    fieldset{
+        background: #f4f4f4 !important;
+    }
+    .inpAdort{
+        margin-bottom: 4px;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        -webkit-text-fill-color: #070707 !important;
+    }
+}

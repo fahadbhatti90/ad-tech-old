@@ -1,0 +1,6 @@
+.fv-plugins-bootstrap:not(.form-inline) label ~ .fv-plugins-icon {
+    top: 35px !important;
+}
+.fv-plugins-icon {
+    right: 10px !important;
+}

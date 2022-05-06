@@ -1,0 +1,72 @@
+
+.campaignTaggingTable{
+
+    .rdt_TableRow {
+        font-size: 12px !important;
+        color: rgba(140, 140, 140, 0.87)  !important;
+        cursor: pointer;
+        &.activeTr{
+            color:#2f2f2fde !important
+        }
+    }
+    .rdt_TableHeadRow {
+        background-color: #f1f1f1;
+    }
+    .rdt_TableHead {
+        .rdt_TableCol {
+            font-size: 13px  !important;
+            font-weight: 500  !important;
+            color: #4c4c4cde  !important;
+        
+        }
+    }
+    .rdt_TableBody{
+    }
+
+    .MuiPaper-rounded {
+        border-radius: 25px;
+    }
+    .overlay{
+        background: #00000000;
+        transition: background 0.4s ease;
+        z-index:-1;
+    }
+    .dataTableContainer{
+        .ProductNarativeGraph{
+            background: #00000000;
+            transition: transform 0.4s ease;
+            transform: translateX(100%);
+            z-index: 3;
+            // display: none;
+            .productsVisuals{
+                // transition: transform 0.4s ease;
+                // transform: translateX(100%);
+            }
+            // border-radius: 25px;
+        }
+    }
+    .dataTableContainer.show{
+        .overlay{
+            z-index:2;
+            background: #00000014;
+        }
+        .ProductNarativeGraph{
+            transform: translateX(0);
+            // display: none;
+            .productsVisuals{
+                // transition: transform 0.4s ease;
+                // transform: translateX(100%);
+            }
+            // border-radius: 25px;
+        }
+    }
+   
+}
+
+.CampaignTaggingTooltip{
+    .singleTagDelete{
+        svg{
+            font-size:1rem !important;
+        }
+    }
+}

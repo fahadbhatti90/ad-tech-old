@@ -1,0 +1,92 @@
+<svg id="Opt_2" data-name="Opt 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1, .cls-5, .cls-7 {
+        font-size: 18.667px;
+      }
+
+      .cls-1, .cls-6, .cls-9 {
+        fill: #571985;
+      }
+
+      .cls-1, .cls-4, .cls-5, .cls-7, .cls-9 {
+        font-family: Roboto;
+      }
+
+      .cls-1, .cls-4, .cls-7 {
+        font-weight: 500;
+      }
+
+      .cls-10, .cls-2, .cls-3, .cls-4, .cls-7, .cls-8 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        stroke: #6cafe6;
+        filter: url(#filter);
+      }
+
+      .cls-2, .cls-3, .cls-8 {
+        stroke-linejoin: round;
+        stroke-width: 1px;
+      }
+
+      .cls-3 {
+        stroke: #c8c8c8;
+      }
+
+      .cls-4 {
+        font-size: 26.345px;
+      }
+
+      .cls-5 {
+        fill: #bfbfbf;
+      }
+
+      .cls-8 {
+        stroke: #b3b3b3;
+      }
+
+      .cls-8, .cls-9 {
+        mix-blend-mode: luminosity;
+      }
+
+      .cls-9 {
+        font-size: 13px;
+      }
+
+      .cls-10 {
+        fill-rule: evenodd;
+      }
+    </style>
+    <filter id="filter" x="172" y="415" width="383" height="65" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="2.667" in="SourceAlpha"/>
+      <feComposite result="composite"/>
+      <feComposite result="composite-2"/>
+      <feComposite result="composite-3"/>
+      <feFlood result="flood" flood-color="#6dafe1" flood-opacity="0.38"/>
+      <feComposite result="composite-4" operator="in" in2="composite-3"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <image x="238" y="235" width="80" height="102" xlink:href="data:img/png;base64,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"/>
+  <g>
+    <text id="LOG_IN_TO_YOUR_ACCOUNT" data-name="LOG IN TO YOUR ACCOUNT" class="cls-1" x="243.859" y="394.551">LOG IN TO YOUR ACCOUNT</text>
+    <g style="fill: #fff; filter: url(#filter)">
+      <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-2" x="179" y="422" width="368" height="50" rx="25" ry="25" style="stroke: inherit; filter: none; fill: inherit"/>
+    </g>
+    <use xlink:href="#Rounded_Rectangle_1" style="stroke: #6cafe6; filter: none; fill: none"/>
+    <rect id="Rounded_Rectangle_1_copy" data-name="Rounded Rectangle 1 copy" class="cls-3" x="179" y="496" width="368" height="50" rx="25" ry="25"/>
+    <text id="helo-tek" class="cls-4" transform="translate(313.859 336.44) scale(1.822)">helo-tek</text>
+    <text id="Enter_email_address" data-name="Enter email address" class="cls-5" x="202.858" y="452.551">Enter email address</text>
+    <text id="Password" class="cls-5" x="202.858" y="525.551">Password</text>
+  </g>
+  <g id="Group_2_copy" data-name="Group 2 copy">
+    <rect id="Rounded_Rectangle_1_copy_2" data-name="Rounded Rectangle 1 copy 2" class="cls-6" x="179" y="602" width="368" height="50" rx="25" ry="25"/>
+    <text id="Login" class="cls-7" x="338.375" y="632.336">Login</text>
+    <rect id="Rounded_Rectangle_8_copy_6" data-name="Rounded Rectangle 8 copy 6" class="cls-8" x="204" y="565" width="12" height="12" rx="2" ry="2"/>
+    <text id="Remember_Me" data-name="Remember Me" class="cls-9" x="225" y="577.001">Remember Me</text>
+  </g>
+  <path class="cls-10" d="M3,5H15V7H3V5Zm0,6H15v2H3V11ZM6,3H9V9H6V3Zm4,6h3v6H10V9Z"/>
+</svg>

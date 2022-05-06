@@ -1,0 +1,21 @@
+.exportCsvMain{
+    .exportCSVDRP{
+        top:100%;
+        margin-top:5px;
+    }
+    .dateRange{
+        & > div > div{
+            border:1px solid #c3bdbd8c !important;
+            cursor: pointer;
+        }
+    }
+    #dateRange{
+        color: #9a9999;
+        cursor: pointer;
+    }
+    .CustomDateRangePickerParent {
+        .CustomDateRangePicker{
+            box-shadow: 1px 5px 10px #00000030;
+        }
+    }
+}

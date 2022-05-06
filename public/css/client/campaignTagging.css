@@ -1,0 +1,174 @@
+.selectTagType {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 3;
+    transition: transform 0.3s ease;
+    transform: translateX(-150%);
+}
+.tags-container  > .tag.row > div:nth-child(1){
+    padding:0;
+}
+.tags-container .tag > div:nth-child(1) .selectContainer,
+.tags-container > .row > div:nth-child(1) .selectContainer{
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+.tags-container  .tag > div:nth-child(1) .selectContainer .checkboxMiniContainer,
+.tags-container > .row > div:nth-child(1) .selectContainer .checkboxMiniContainer{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.tags-container  .tag > div:nth-child(1) .selectContainer .checkboxMiniContainer span,
+.tags-container > .row > div:nth-child(1) .selectContainer .checkboxMiniContainer span{
+    background: #2948a1;
+    box-shadow: none;    
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+}
+.tags-container  .tag > div:nth-child(1) .selectContainer .checkboxMiniContainer span i,
+.tags-container > .row > div:nth-child(1) .selectContainer .checkboxMiniContainer span i{
+    display:none;
+    color:#fff;
+    font-size:7px;
+}
+.tags-container  .tag > div:nth-child(1) .selectContainer.active .checkboxMiniContainer span i,
+.tags-container > .row > div:nth-child(1) .selectContainer.active .checkboxMiniContainer span i{
+    display:inline-flex;
+}
+.tags-container > .tag.row > div:nth-child(1) .selectContainer .checkboxMiniContainer span i,
+.tags-container > .row > div:nth-child(1) .selectContainer .checkboxMiniContainer span i{
+    display: none;
+    color: #fff;
+}
+.tags-container > .row > div:nth-child(2).tag-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tags-container > .row > div:nth-child(2) .tag-left span{
+    position: unset;
+    width: 29px;
+}
+.tagGroupManager > .row .section3 .tags-container.selectingType{
+
+}
+.tagGroupManager > .row .section3 .tags-container.selectingType .selectTagType{
+    display:block;
+    transform: translateX(0);
+}
+.tagGroupManager > .row .section3 .tags-container .tag {
+    padding: 10px 0 0 1px;
+}
+.tags-container .selectTagType .tag.row > .tag-left span:hover,
+.tags-container > .row > .tag-left span:hover
+{
+    text-decoration: none !important;
+    cursor: unset !important;
+}
+.tagGroupManager > .row .section3 .tags-container .assignTagButton{
+    padding: 18px 15px 3px 39px;
+}
+.selectTagType .navigationButton.closeSelectTypePopUp {
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    right: -1px;
+    border-bottom-left-radius: 50%;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navigationButton.openSelectTypePopUp {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0px;
+    border-top-right-radius: 50%;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#dataTable tbody tr td:last-child{
+    white-space: nowrap;
+}
+
+.tagManagerSelectionElements .fa-check:before {
+    content: "";
+    background: #fff;
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    border-radius: 100%;
+}
+.tagManagerSelectionElements .checkboxMiniContainer span {
+    border: 0.1px solid;
+    width: 17px;
+    display: flex;
+    text-align: center;
+    height: 17px;
+    color: #4e73df;
+    background: #fff;
+    line-height: 1;
+    cursor: pointer;
+    position: unset !important;
+    transform: unset !important;
+    justify-content: center;
+    align-items: center;
+}
+.tagManagerSelectionElements .checkboxMiniContainer i {
+    position: unset !important;
+    transform: unset !important;
+    font-size: 11px;
+    font-weight: bold;
+    display: inline-flex ;
+    justify-content: center;
+    align-items: center;
+}
+.tags.tagManagerSelectionElements .selectContainer {
+    position: unset;
+    margin-right: 10px;
+}
+.tagGroupManager > .row .section3 .tags-container .tag .tag-left span {
+    color: #333;
+    display: inline-flex;
+    cursor: pointer;
+}
+.displayFlex{
+    display: flex;
+}
+.displayInlineFlex{
+    display: inline-flex;
+}
+
+.centerChild{
+    justify-content: center;
+    align-items: center;
+}
+.cursorPointer{
+    cursor: pointer;
+}

@@ -1,0 +1,80 @@
+.labelData {
+    color: #9a9a9a;
+    line-height: 5px;
+    height: auto;
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    font-size: 1vw; 
+}
+
+.currency {
+    display: block;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 1.1rem !important;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    margin-top: 7px;
+}
+
+.spanCenter{
+    text-align:center;
+    display:block;
+    color: #44bc8c;
+}
+
+.posLabel {
+    color: #44bc8c;
+}
+
+.negLabel {
+    color: #f44336;
+}
+
+.childCard{
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+}
+
+.heading{
+    font-weight:600 !important;
+    font-size: 1.1rem !important
+}
+
+.subHeading{
+    font-size: 0.5rem !important;
+}
+
+.labelValue{
+    margin-bottom: 0.3rem;
+}
+
+.rotateSvg{
+    transform: rotate(180deg);
+}
+
+.icon{
+    cursor: pointer;
+    right: 0;
+}
+
+.c3-axis-y .c3-axis-y-label {
+    font-weight: 500 !important;
+}
+
+.c3-axis-y2 .c3-axis-y2-label{
+    font-weight: 500 !important;
+} 
+.c3-axis-x text {
+    font-size: 7px; 
+}
+.c3-tooltip tr:first-child th{
+    text-align: center !important;
+}
+
+.arrowH{
+    height: 10px !important
+}

@@ -1,0 +1,257 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+@import 'home';
+@import 'dateRangePicker';
+
+@import "tailwindcss/components";
+
+// Bootstrap
+body{
+    // background:$background;
+    /**Utilities Custom */
+    font-family: $theme_font_family !important;
+    .translate-top-full{
+        transform: translateY(-100%);
+    }
+    /**Utilities Custom */
+    main{
+        padding: 50px 0px 24px 0px !important;
+    }
+    .themeTextColor{
+        color:$primaryColor;
+    }
+    .themeNormalFontFamily{
+        font-family: $theme_font_family !important;
+    }
+    .themeBoldFontFamily{
+        font-family: PoppinsBold, sans-serif !important;
+    }
+    .sideBarDrawer{
+        .themeNormalFontFamily{
+            span{
+                font-family: $theme_font_family !important;
+            }
+        }
+    }
+    .themePrimaryColor{
+        color:$primaryColor;
+    }
+    .themeBgPrimaryColor{
+        background-color:$primaryColor;
+    }
+    
+    .errorCustom{
+        margin: 0;
+        font-size: 90%;
+        // color: tomato;
+    }
+    .errorCustom .ThemeInput > div > div:nth-child(1) {
+        border: 1px solid tomato !important;
+    }
+    .errorCustom .ThemeSelect > .select__control  {
+        border: 1px solid tomato !important;
+    }
+    .scrollableDatatable {
+        overflow:hidden;
+        & > div {
+            overflow-x: auto;
+            width: 100%;
+            max-width: 100%;
+            display: block;
+            .rdt_Table {
+                display: table;
+            }
+        }
+        
+    }
+}
+.rdt_TableCell {
+    .tooltipText {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+
+.MuiPaper-root.MuiDrawer-paper{
+    background-color: $primaryColor;
+    color:#fff;
+    background-image: linear-gradient(180deg, $primaryColor 10%, $primaryColor 100%);
+    .MuiListItemIcon-root{
+        min-width: 40px;
+        .sideBarIcon{
+            width:16px;
+        }
+    }
+    .MuiListItemText-primary{
+        font-size:0.8rem;
+    }
+    .listItem{
+        &:hover{
+            background-image: linear-gradient(to left, $primaryColorLight 10%, $primaryColor 100%);
+        }
+    }
+    .listItem.active{
+        background-image: linear-gradient(to left, $primaryColorLight 10%, $primaryColor 100%);
+    }
+}
+.MainLayout{
+    header.appBar{
+        padding: 0 2rem;
+        .PageTitleContainer{
+            padding:0 !important;
+            .PageTitle{
+                font-size: 1.7rem;
+                font-weight: 700;
+                .appBarDateTime{
+                    display: flex;
+                    align-items: center;
+                    font-size: 0.75rem;
+        
+                    &span:nth-child(1){
+                        height: 0.125rem;
+                    }
+                    &span:nth-child(2){
+        
+                    }
+                    &span:nth-child(3){
+        
+                    }
+                    &span:nth-child(4){
+        
+                    }
+                }
+            }
+        }
+    
+        .mainControls{
+    
+            .searchIcon{
+                width: 12px;
+            }
+            .notificationBell {
+                // width:  18px;
+                color:$primaryColor;
+            }
+            .markAllAsRead{
+                padding-right: 2.1rem;
+                .markAllButton {
+                    &.largeBtn{
+                        width: 12px;
+                        height: 12px; 
+                        border: 3px solid red;   
+                    }
+                    
+                    background: #fff;
+                }
+            }
+            .notificationListItem{  
+                padding: 5px 30px 5px 15px;
+            }
+            .notificationTab{
+                ul{
+                    padding-top:0px
+                }
+                .noNotiFoundText{
+                    min-height: 230px;
+                }
+            }
+        }
+        
+        .newNotificationIcon{
+            &.smallBtn{
+                width: 9px;
+                height: 9px; 
+                border: 3px solid red;   
+            }
+            background: red;
+        }
+        .userInfoSection{
+    
+            .userIconContainer {
+                background: linear-gradient(to left,$primaryColorLight 10%, $primaryColorLight 100%);
+                img{
+                    height:inherit !important;
+                }
+            }
+        }
+    
+    }
+}
+.SidBarLogo{
+    height: auto !important;
+    cursor: pointer;
+}
+.NotificationPopup{
+    .NotificationPopupHeader{
+        box-shadow: none !important;
+        .NotificationTabs{
+            button{
+                min-width: 100px !important;
+                width: 100%;
+                color: rgb(0 0 0 / 31%);
+                font-family: $theme_font_family !important;
+                text-transform: capitalize;
+                &.Mui-selected {
+                    color: $primaryColor;
+                    text-transform: uppercase !important;
+                    .tabTitle {
+                        font-weight: 700;
+                    }
+                }
+                .MuiBadge-badge{
+                    color: red;
+                    font-weight: bold;
+                    font-family: cursive;
+                    right: -5px;
+                }
+            }
+            .MuiTabs-indicator{
+                background-color: $primaryColor;
+            }
+        }  
+        .NotificationTabs.managersNotification{
+            button{
+                min-width: 100px !important;
+                width: 100%;
+                .MuiBadge-badge{
+                    color: red;
+                    font-weight: bold;
+                    font-family: cursive;
+                    right: -5px;
+                }
+            }
+        }
+    }
+    .NotificationIcon{
+        background-color: $primaryColor ;
+        // color: $primaryColor;
+        // border:2px solid $primaryColor;
+    }
+    .NotificaitonTitle{
+        span.time{
+            font-size: 0.55rem;
+        }
+    }
+    .NotificationDescription{
+        font-size: 0.65rem;
+    }
+    .NotificationFooter {
+        display: flex;
+        color: lighten($color: $primaryColor, $amount: 30%)
+    }
+}
+.themePopupsShadows{
+    box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12);
+}
+.top-full{
+    top:100%
+}
+.loaderOverlay{
+    background-color:#ffffffc2; 
+}
+@import "tailwindcss/utilities";

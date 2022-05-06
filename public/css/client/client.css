@@ -1,0 +1,556 @@
+.scroll-to-top {
+    z-index: 9;
+}
+
+.sidebar-dark.toggled #sidebarToggle::after {
+    color: #4e73df;
+}
+.sidebar-dark #sidebarToggle::after {
+    color: #4e73df;
+}
+.options{
+    margin-bottom:0px !important;
+}
+.options .left_card .card-body{
+    padding:50px;
+}
+
+  .dropdown-trigger {
+    cursor: pointer;
+  }
+.dropdown-content li>a, .dropdown-content li>span {
+    font-size: 16px;
+    color: #6d6e6f;
+    display: block;
+    line-height: 22px;
+    padding: 14px 16px;
+}
+.waves-effect.waves-blue {
+     background-color: rgba(78, 115, 223,1);
+}
+.waves-effect.waves-blue:hover {
+    color:#fff !important;
+}
+.waves-effect.waves-blue .waves-ripple {
+    background-color: #f0f0f047;
+}
+.waves-effect.waves-white {
+    background-color: rgba(255, 255, 255, 0);
+    color: #000;
+    box-shadow: none;
+}
+.waves-effect.waves-white:hover {
+    color:#000;
+    background-color: rgba(78, 115, 223,1);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.sidebar {
+    /* transition: width 0.2s ease-in-out; */
+} 
+.sidebar .waves-effect.waves-teal{
+   
+    display: block;
+    /* text-align: center; */
+    text-decoration: none;
+    color: #fff;
+}
+
+
+  
+.clientDasboard .options.row .col{
+    padding:0;
+    margin: 0;
+}
+.clientDasboard .options.row .right_card .col{
+    padding:0;
+    margin: 0 !important;
+}
+.clientDasboard .options .row .col{
+    padding:0;
+    margin: 0;
+}
+.clientDasboard .productPreviewTable.row .col{
+    padding:0;
+    margin: 0;
+}
+.clientDasboard .productPreviewTable .row .col{
+    padding:0;
+    margin: 0;
+}
+.clientDasboard .left_card .row .col{
+    padding: 0;
+    margin: 10px 15px;
+   
+}
+.graphFilter.row .col {
+    margin: 0 !important;
+    padding: 0 15px !important;
+}
+.clientDasboard .left_card .row .col .select-wrapper {
+    
+}
+.clientDasboard .left_card .row .col .select-wrapper input.select-dropdown {
+    padding: 5px 0px 5px 15px;
+    border: 1px solid #00000014 !important;
+    height: 2rem !important;
+    /* border-radius: 5px !important; */
+    /* box-shadow: rgba(0, 0, 0, 0.33) 0px 1px 3px 0px; */
+}
+.materializeCss .dropdown-content{
+    /* border-radius: 5px !important; */
+}
+
+.right_card .row .col{
+    /* padding-left: 0 !important; */
+    /* margin-left: 0 !important;
+    margin-right: 0 !important; */
+    /* padding-right: 0 !important; */
+}
+.clientDasboard  .noSpace .card {
+    border-radius: 18px;
+    overflow: hidden;
+    margin:0;
+}
+.options .left_card,.options .right_card {
+    overflow: visible !important;
+}
+.options .right_card .card #chart {
+    overflow: hidden !important;
+}
+.cardTitleCustom{
+    padding: 5px 25px;
+    background-color: #4e73df;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    width: 270px;
+    text-align: center;
+    display: none;
+    border-top-left-radius: 18px;
+}
+.clientDasboard .productPreviewTable .card-body{
+    padding: 0;
+}
+.clientDasboard .noSpace .card-body .row{
+    margin-bottom: 0;
+}
+.productViewTable{
+}
+.productViewTable > table{
+    margin: 0;
+}
+.productViewTable > table  > tbody > tr > td td:not(.majorCol) {
+    padding: 10px 0px;
+    text-align: center;
+    max-width: 15px;
+    min-height: 20px;
+    min-width: 15px;
+    border-right: none !important;
+    max-height: 20px;
+}
+
+.productViewTable > table  > tbody > tr > td td:not(.majorCol) > i {
+    display: none;
+}
+.productViewTable > table  > tbody > tr > td td:not(.majorCol).active {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4e73df), to(#224abe));
+    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    color:#fff;
+}
+#dailyMonthDropdown{
+    width:150px !important;
+    top:0 !important;
+}
+.productViewTable > table  > tbody > tr > td td:not(.majorCol).active > i {
+    display: inline;
+    cursor: default;
+    color: #fff !important;
+}
+.productViewTable.weekActive > table  > tbody > tr > td td:not(.majorCol).active > i {
+    font-size:11px;
+}
+.productViewTable > table > tbody > tr > td{
+    padding: 0;
+    border: none !important;
+}
+.productViewTable > table > tbody > tr > td > table{
+    margin:0;
+    border-right: none !important; 
+    border-left: none !important;
+}
+.firstColumn{
+    position: relative;
+    min-width: 100px;
+    border-left: none !important;
+}
+.monthActive .firstColumn{
+    min-width: 30px;
+    
+}
+.weekActive .firstColumn{
+    min-width: 100px;
+    
+}
+.weekActive .userAction0 td.dynamicData {
+    font-size: 11px;
+    padding: 12px 1px 12px 0;
+}
+.userAction0 td.dynamicData {
+    background-color: #4e73df;
+    color: #fff;
+}
+.dailyActive .firstColumn{
+    min-width: 70px;
+    
+}
+.firstColumn > div{
+    display: block;
+    margin: auto auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: #89898aad;
+    transform: translateY(-50%) translateX(-50%);
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1;
+}
+.secondColumn{
+    min-width: 50px;
+    max-width: 100px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    border-right-width: 3px !important;
+    border-left-width: 3px !important;
+}
+.monthActive .secondColumn{
+    max-width: 30px;
+    min-width: 30px;
+    
+}
+.weekActive .secondColumn{
+    max-width: 100px;
+    
+}
+.dailyActive .secondColumn{
+    max-width: 70px;
+    
+}
+.data-line {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+    stroke-dasharray: 0;
+}
+.clientDasboard path {
+    stroke: #eee;
+    stroke-width: 2;
+    stroke-dasharray: 0;
+    fill: none;
+}
+
+.clientDasboard .area {
+    fill: url(#area);
+}
+
+.clientDasboard text {
+    font-family: Arial;
+    font-size: 8pt;
+    fill: #787878;
+}
+
+.clientDasboard line {
+    stroke: #CDCDCD;
+    stroke-width: 0.5;
+    /* stroke-dasharray: 3 3; */
+    fill: none;
+}
+
+.clientDasboard .data-point {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: #FFF;
+    cursor: pointer;
+}
+
+#chart {
+    margin: 0;
+    overflow-x:auto;
+}
+#chart .yLabel{
+    /* transform: rotate(-90deg); */
+    font-size: 17px;
+    text-transform: capitalize;
+}
+#chart .xLabel{
+    transition: transform 0.5s ease;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    outline: 0;
+    background-color: transparent;
+}
+.modal .btn, .modal  .btn-large, .modal .btn-small {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 5px !important;
+    background-color: #4e72df;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: background-color .2s ease-out;
+    transition: background-color .2s ease-out;
+    cursor: pointer;
+}
+.modal .btn-close{
+    background: transparent;
+    box-shadow: none;
+    color: #000;
+}
+.modal .btn-close:hover{
+    background: transparent !important;
+    text-decoration: underline;
+}
+.modal .btn:hover, .modal .btn-large:hover, .modal .btn-small:hover {
+    background-color: #4e72dfe0;
+}
+
+li{
+    list-style-type: none;
+}
+.xTick text {
+    /* transform: rotate(90deg) translate3d(344px, -350px, 0);
+    font-weight: bold; */
+}
+.datesFilter{
+    position: relative;
+}
+.selectedAsin{
+margin: 7px 0;    
+color: #4e73df !important;
+font-size: 15px;
+float: unset !important;
+cursor: pointer;
+}
+
+
+.preloadOnDropdownChange{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 999;
+    font-size: 19px;
+    height: 100%;
+    background-color: #ffffffc7;
+}
+.preloadOnDropdownChange .mainPreloader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    z-index: 999;
+    font-size: 19px;
+}
+.tooltipster-sidetip .tooltipster-content {
+    color: #000000;
+    line-height: 18px;
+    padding: 6px 14px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.tooltipster-sidetip .tooltipster-box {
+    background: #ffffff;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px;
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+    border-top-color: #fff;
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+    border-top-color: #fff;
+    left: 0;
+    top: -3px;
+}
+
+
+
+.select-wrapper input.select-dropdown {
+    position: relative;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    outline: none;
+    height: 2rem;
+    line-height: 3rem;
+    width: 100%;
+    font-size: 14px;
+    margin: 0 0 0px 0;
+    padding: 0;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1;
+}
+
+.datepicker-container{
+    border-radius: 1px;
+    overflow: hidden;
+    border: none;
+}
+.datepicker-controls{
+    padding: 15px 0;
+}
+.d{
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4e73df), to(#224abe));
+    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+}
+#chart{
+    position: relative;
+}
+#chart .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: #ffffffcf; */
+    background: #ffffff;
+    z-index: 1; 
+}
+
+#chart .bg .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td{
+    padding:1px !important;
+}
+.daterangepicker {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.daterangepicker:before {
+    top: -8px !important;
+}
+.breadcrumb {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+}
+.breadcrumb:before{
+    font-size: 1rem;
+    display: none;
+}
+a {
+    color: #4e73df;
+ 
+}
+.modal-header .close{
+}
+.modal-title{
+    margin-top: 0;
+}
+.modal .modal-footer{
+    background-color: transparent;
+}
+button:focus {
+    /* outline: none;
+    background-color: #4e73df00; */
+}
+#sidebarToggleTop{
+    font-size:14px;
+    padding: 0px;
+}
+.shadow {
+    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+}
+
+.swal2-container {
+    z-index: 99999999999999999999!important;
+}
+.cancelBtn {
+
+}
+.form-control.is-valid, .was-validated .form-control:valid {
+    border-color: #1cc88a !important;
+}
+.form-control.is-valid:focus, .was-validated .form-control:valid:focus {
+    border-color: #1cc88a!important;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(28, 200, 138, .25);
+    box-shadow: 0 0 0 0.2rem rgba(28, 200, 138, .25)!important;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid{
+    border-color: #e74a3b !important;;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 74, 59, .25);
+    box-shadow: 0 0 0 0.2rem rgba(231, 74, 59, .25);
+}
+.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+    border-color: #e74a3b !important;;
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(231, 74, 59, .25);
+    box-shadow: 0 0 0 0.2rem rgba(231, 74, 59, .25);
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #4e73df29;
+}
+
+.salesCard{
+    /* margin-top: 7px; */
+    text-align: center;
+    opacity: 0;
+}
+.salesCard .preCard,
+.salesCard .postCard
+{
+    padding: 15px 15px;
+    background-color: #4e73df59;
+    color: #484848;
+    border: 2px solid #0000001c;
+    display: inline-block;
+}
+.clientDasboard path:nth-child(2) {
+    stroke-width: 0;
+}
+/* width */
+
+#chart svg .xTick line{
+    display: none;
+}
+
+
+/*Dropdowns*/
+.select-dropdown.dropdown-content li:hover {
+    background-color: #4e73df29;
+}
+/*Dropdowns*/
+
+/*Prelaoder*/
+.preloader-wrapper.small {
+    width: 25px;
+    height: 25px;
+}
+
+/*Prelaoder*/

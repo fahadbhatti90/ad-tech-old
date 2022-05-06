@@ -1,0 +1,163 @@
+
+.productTable{
+    .productTableChip{
+        & > div{
+            font-size: 0.7125rem;
+            height: 20px;
+        }
+    }
+    
+    .rdt_TableRow {
+        font-size: 12px !important;
+        color: rgba(140, 140, 140, 0.87)  !important;
+        cursor: pointer;
+        &.activeTr{
+            color:#2f2f2fde !important
+        }
+    }
+    .rdt_TableHeadRow {
+        background-color: #f1f1f1;
+    }
+    .rdt_TableHead {
+        .rdt_TableCol {
+            font-size: 13px  !important;
+            font-weight: 500  !important;
+            color: #4c4c4cde  !important;
+        
+        }
+    }
+    .rdt_TableBody{
+        min-height: 450px !important;
+    }
+
+    .MuiPaper-rounded {
+        border-radius: 25px;
+    }
+    .overlay{
+        background: #00000000;
+        transition: background 0.4s ease;
+        z-index:-1;
+    }
+    .dataTableContainer{
+        .ProductNarativeGraph{
+            background: #00000000;
+            transition: transform 0.4s ease;
+            transform: translateX(100%);
+            z-index: 3;
+            // display: none;
+            .productsVisuals{
+                // transition: transform 0.4s ease;
+                // transform: translateX(100%);
+            }
+            // border-radius: 25px;
+        }
+    }
+    .dataTableContainer.show{
+        .overlay{
+            z-index:2;
+            background: #00000014;
+        }
+        .ProductNarativeGraph{
+            transform: translateX(0);
+            // display: none;
+            .productsVisuals{
+                // transition: transform 0.4s ease;
+                // transform: translateX(100%);
+            }
+            // border-radius: 25px;
+        }
+    }
+   
+}
+
+
+.ProductTableTooltip{
+    .singleTagDelete{
+        svg{
+            font-size:1rem !important;
+        }
+    }
+}
+
+
+.productTableFilter{
+    background: #f7f7f7;
+    .select__indicator {
+        // padding:3px;
+    }
+    .select__control {    
+        border-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px
+    }
+    .select__menu{
+        border-radius: 10px;
+        border-top-left-radius: 0px !important;
+        border-top-right-radius: 0px !important;
+        box-shadow: none;
+        border: 1px solid #c3bdbd8c;
+        overflow: hidden;
+        border-top: 0px;
+        .select__menu-list{
+            max-height: 110px;
+            min-height: 110px;
+            .select__group{
+                .select__group-heading{
+                    & div{
+                        cursor: pointer;
+                        &:before{
+                            content: ">";
+                            display: inline-block;
+                            font-weight: bold;
+                            padding: 0 4px;
+                            transition:transform 0.2s ease-in-out;
+                        }
+                        &.toggleGroup:before{
+                            transform:rotate(90deg);
+                        }
+                    }
+
+                }
+                .select__option {
+                    cursor: pointer;
+                    outline: none !important;
+                    font-size:75%;
+                    padding-left: 27px;
+                }
+                
+            }
+            .select__option {
+                cursor: pointer;
+                outline: none !important;
+                font-size:75%;
+            }
+        }
+    }
+
+
+    .select__multi-value__label{
+        padding: 1px;
+        padding-left: 5px;
+    }
+    .select__multi-value__remove{
+        padding-left: 0px;
+        padding-right: 1px;
+    }
+}
+
+.productsVisuals {
+    .mainVisuals {
+        margin-right: 5.9px;
+        &::-webkit-scrollbar-track {
+            background: #673ab738;
+            margin: 140px 0 !important;
+            border-radius: 25px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #571986;
+            border-radius: 20px;
+            border: 3px solid #571986;
+        }
+
+    }
+}

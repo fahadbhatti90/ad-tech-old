@@ -1,0 +1,274 @@
+@import './../../../../../sass/variables';
+
+.productTableVisuals {
+    .graphLoader{
+        z-index: 2;
+        border-radius: 30px;
+    }
+    .selectedFilterDetails p {
+        color: $primaryColor;
+        margin-left: 7%;
+        font-weight: 400;
+        font-size: 14px;
+        margin: 0;
+        text-shadow: 0px 1px 0px;
+    }
+    .selectedFilterDetails #saledd {
+        border: 1.5px solid #0101012b;
+        border-radius: 3px;
+    }
+    .c3-axis.c3-axis-x > path {
+        fill: none;
+        stroke: #9e9e9eb0;
+    }
+    .c3-tooltip 
+    {
+        th {
+            background-color: $primaryColor ;
+            font-size: 14px;
+            padding: 2px 5px;
+            text-align: left;
+            color: #fff;
+        }
+    }
+    g.c3-grid.c3-grid-lines{
+            .labelNoData {
+                line {
+                    stroke:red;
+                }
+                text{
+                    display:none;
+                }
+            }
+    }
+    &.warningPoint{
+        .c3-grid {                
+            g.c3-xgrid-focus{
+                line {
+                    stroke:$red;
+                }
+            }
+        }
+        .c3-tooltip 
+        {
+            th {
+                background-color: $red;
+            }
+            td {
+                & > span {
+                    background-color:$red !important;
+                }
+    
+            }
+        }
+        g.c3-grid.c3-grid-lines{
+            .labelNoData {
+                
+                text{
+                    display:none;
+                }
+            }
+            &:hover{
+                .labelNoData {
+                    text{
+                        display:block !important;
+                    }
+                }  
+            }
+        }
+    }
+    .c3-axis.c3-axis-x > path,
+    .c3-axis.c3-axis-y > path
+    {
+        fill: none;
+        stroke: #9e9e9eb0;
+    }
+    .c3 .c3-axis-y-label {
+        font-size: 14px;
+        font-weight: 100;
+    }
+    .c3 text {
+        fill: #776f6f !important;
+        font-weight: bolder;
+        font-size: 10px;
+    }
+    .c3-circle {
+        // fill: currentColor;
+        fill: $primaryColor ;
+    }
+    .c3-line {
+        stroke: $primaryColor !important;
+    }  
+    .extraLine {
+        background: #9e9e9eb0;
+        display: block;
+        width: 1.5px;
+        height: 430px;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+    }
+    .eventLabelContainer {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .eventsLabel {
+        transform: rotate(-90deg) translateX(100px);
+        font-size: 14px;
+        color: #776f6f !important;
+        letter-spacing: 1px;
+        font-family: sans-serif !important;
+    }
+    .tick line {
+        display: none;
+    }
+    line.c3-ygrid {
+        stroke-dasharray: none !important;
+        shape-rendering: auto !important;
+        stroke: #00000012;
+    }
+   
+    #eventsChart{
+        width: 100%;
+        height: 200px;
+        position: relative;
+        .event{
+            background: #9100ff;
+            height: 3px;
+            width: 100px;
+            position: absolute;
+            cursor: pointer;
+            margin-left: 4px;
+            opacity: 1;
+            transition: opacity 0.4s cubic-bezier(0.48, 0.69, 0.37, 1.18), transform 0.8s cubic-bezier(0.48, 0.69, 0.37, 1.18);
+            &.left100{
+                opacity: 0 !important;
+                transform: scale(1.5);
+            }
+        }
+        .event:hover .eventGradient{
+            display: block;
+        }
+        .eventGradientContainer {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .eventGradient {
+            position: absolute;
+            width: 100%;
+            height: 250px;
+            /* background-image: linear-gradient(180deg, #4e73df00 10%, #224abe80 100%); */
+            bottom: 3px;
+            display: none;
+        }
+    }
+    .vissualContainer .eventsButtons > div input{
+        margin-right:3px;
+    }
+
+    .vissualContainer .eventsButtons > div {
+        font-size: 12px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        margin-bottom: 14px;
+    }
+    .checkboxContainer {
+        display: block;
+        position: relative;
+        padding-left: 27px;
+        margin-bottom: 18px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-size: 0.71rem !important;
+        font-weight: 500;
+    }
+    /* Hide the browser's default checkbox */
+    .checkboxContainer input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* On mouse-over, add a grey background color */
+    /* When the checkbox is checked, add a blue background */
+    // [0,'Reviews', "linear-gradient(180deg, #9e9e9e00 10%, #b3b3b3ad 100%)","#b3b3b3"],
+    // [1,'Content', "linear-gradient(180deg, #4e73df00 10%, #3f51b5ba 100%)","#323f8a"],
+    // [2,'Page not found',"linear-gradient(180deg, #4e73df00 10%, #ff00f4b0 100%)","#ff00f4"],
+    // [3,'Andon Cord',"linear-gradient(180deg, #f4433600 10%, #f44336ad 100%)","#f44336"],
+    // [4,'Crap', "linear-gradient(180deg, #4e73df00 10%, #224abe80 100%)","#224abe"],
+    // [5,'Out of Stock', "linear-gradient(180deg, #4e73df00 10%, #03ffc58c 100%)","#03ffc5"],
+    // [6,'Seller change',"linear-gradient(180deg, #4e73df00 10%, #795548d4 100%)","#795548"],
+    // [7,'Price change', "linear-gradient(180deg, #4e73df00 10%, #9c27b0c9 100%)","#9c27b0"],
+    // [8,'Advertising', "linear-gradient(180deg, #4e73df00 10%, #4caf50c2 100%)","#4CAF50"],
+    .checkboxContainer .reviewEventButton-checkmark  {
+        background-color: #b3b3b3;
+    }
+    .checkboxContainer .contentEventButton-checkmark {
+        background-color: #323f8a;
+    }
+    .checkboxContainer .pageNotFoundEventButton-checkmark {
+        background-color: #ff00f4;
+    }
+    .checkboxContainer .andonEventButton-checkmark {
+        background-color: #f44336;
+    }
+    .checkboxContainer .crapEventButton-checkmark {
+        background-color: #224abe;
+    }
+    .checkboxContainer .outOfStockEventButton-checkmark {
+        background-color: #03ffc5;
+    }
+    .checkboxContainer .sellerChangeEventButton-checkmark {
+        background-color: #795548;
+    }
+    .checkboxContainer .priceChangeEventButton-checkmark {
+        background-color: #9c27b0;
+    }
+    .checkboxContainer .advertisingEventButton-checkmark {
+        background-color: #4CAF50;
+    }
+
+    
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkboxContainer .checkmark svg {
+        display: none;
+    }
+    
+    /* Show the checkmark when checked */
+    .checkboxContainer input:checked ~ .checkmark svg {
+        display: flex;
+    }
+    
+    /* Style the checkmark/indicator */
+    .checkboxContainer .checkmark svg {
+        height: 16px;
+        width: 16px;
+        color:#fff
+    }
+
+    #DatePart{
+        color: #8b8c8e;
+    }
+}

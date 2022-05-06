@@ -1,0 +1,867 @@
+.select2-selection.select2-selection--multiple .select2-selection__rendered::-webkit-scrollbar,
+.select2-results__options::-webkit-scrollbar
+ {
+    width: 4px;
+}
+.select2-selection.select2-selection--multiple .select2-selection__rendered::-webkit-scrollbar-thumb,
+.select2-results__options::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.select2-selection.select2-selection--multiple  .select2-selection__rendered::-webkit-scrollbar-track,
+.select2-results__options::-webkit-scrollbar-track {
+    background: #f1f1f100;
+    background-color: #ebebeb00;
+}
+.select2-container {
+    bottom: 0 !important;
+    top: unset !important;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+}
+.select2-container.select2-container--default .select2-selection--multiple {
+    border-color: #aaaaaa2e !important;
+    border-width: 1.5px !important;
+    border-radius: 14px;
+}
+.select2-container .select2-dropdown {
+    border: 1.5px solid #aaaaaa2e !important;
+    border-radius: 14px;
+    border-top: 0px !important;
+}
+.select2-container .select2-search--inline .select2-search__field {
+    margin-top: 0 !important;
+    padding: 0 8px  !important;
+    height:auto !important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__clear {
+    margin-top: 0 !important;
+}
+.productsVisuals .select2-container .select2-selection {
+    max-height: 59px;
+    min-height: 20px !important;
+    display: flex;
+    overflow-y: auto;
+} 
+.select2-container .select2-selection--multiple .select2-selection__rendered{
+    overflow-y: auto !important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #efeded !important;
+    border: 0 !important;
+    border-radius: 4px !important;
+    font-size: 12px;
+    line-height: 2 !important;
+    padding: 0 3px !important;
+    margin-top:3px !important;
+}
+.select2-results__option {
+    color: #222222ab;
+    font-size: 12px;
+    font-weight: 500;
+}
+.select2-container.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #0000000f;
+    color: #222222ab;
+}
+.select2-container--default .select2-results__group {
+    display: flex !important;
+    position: relative;
+    align-items: center;
+    font-weight: 500;
+}
+strong.select2-results__group::before {
+    content: "\f078";
+    margin-right: 5px;
+    font-family: "Font Awesome 5 Free";
+    font-size: 11px;
+    font-weight:bold;
+}
+.productsVisuals .productHeader{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productsVisuals #dataTable_filter1{
+    flex: 1;
+    margin-right: 50px;
+}
+.productsVisuals #dataTable_filter{
+    margin-right: 17%;
+    display: none;
+    /* margin-top: -58px; */
+}
+.filterControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+.filterControls label{  
+    margin:0;
+}
+.productsVisuals #dataTable_filter input,
+.productsVisuals #dataTable_filter1 input {
+    border-radius: 10px;
+    border: 1px solid #b9b9b942
+}
+
+ /* dataTables CSS modification & positioning */
+ .productsVisuals table.dataTable thead .sorting:before,
+ .productsVisuals table.dataTable thead .sorting_asc:before,
+ .productsVisuals table.dataTable thead .sorting_desc:before,
+ .productsVisuals table.dataTable thead .sorting_asc_disabled:before,
+ .productsVisuals table.dataTable thead .sorting_desc_disabled:before {
+    right: 0 !important;
+    content: "" !important;
+ }
+ .productsVisuals table.dataTable thead .sorting:after,
+ .productsVisuals table.dataTable thead .sorting_asc:after,
+ .productsVisuals table.dataTable thead .sorting_desc:after,
+ .productsVisuals table.dataTable thead .sorting_asc_disabled:after,
+ .productsVisuals table.dataTable thead .sorting_desc_disabled:after {
+   right: 0 !important;
+   content: "" !important;
+ }
+ 
+ .productsVisuals table.dataTable thead .sorting_asc {
+    background: url("http://cdn.datatables.net/1.10.0/images/sort_asc.png") no-repeat center left;
+  }
+  .productsVisuals table.dataTable thead .sorting_desc {
+    background: url("http://cdn.datatables.net/1.10.0/images/sort_desc.png") no-repeat center left;
+  }
+  .productsVisuals table.dataTable thead .sorting {
+    background: url("http://cdn.datatables.net/1.10.0/images/sort_both.png") no-repeat center left;
+  }
+
+  .productsVisuals .hText_Res{
+    padding: 5px;
+    font-size: 1.3vw;
+    width: 100%;
+  }
+  .productsVisuals .boxHeight{
+    min-height: 220px !important;
+    /* margin-top: 15px; */
+}
+.productsVisuals .labelData { 
+    margin-top: 10%;
+    color: #068af3;
+    line-height: 1px;
+    height: auto;
+    text-align: center;
+    display: block;
+    font-weight: 500;
+    font-size: 1.0vw;
+}
+.redColor{
+    color: #E91E63 !important;
+}
+.productsVisuals .currency {
+    margin: 0;
+    white-space: nowrap;
+    font-size: 1vw;
+    font-weight: 500;
+    color: #7d7a7a;
+    font-family: sans-serif;
+    text-align: center;
+}
+label.currency:nth-child(4) {
+    color: #4CAF50;
+}
+.productsVisuals input[type=search]{
+    padding-left: 8px;
+    width: 100%;
+}
+.productsVisuals ::-webkit-input-placeholder {
+    color: #b9b7b3;
+}
+
+.productsVisuals :-moz-placeholder { /* Firefox 18- */
+    color: #b9b7b3;  
+}
+
+.productsVisuals ::-moz-placeholder {  /* Firefox 19+ */
+    color: #b9b7b3;  
+}
+
+.productsVisuals :-ms-input-placeholder {  
+    color: #b9b7b3;  
+}
+
+/* enable absolute positioning */
+.productsVisuals .inner-addon {
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+}
+
+/* style glyph */
+.productsVisuals .inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 14px;  
+}
+
+
+/* align glyph */
+.productsVisuals .left-addon .glyphicon  { left:  0px;}
+.productsVisuals .right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.productsVisuals .left-addon input  { padding-left:  30px; }
+.productsVisuals .right-addon input { padding-right: 30px; }
+
+.productsVisuals .filterBtn{
+    font-size: 12px;
+    color: white;
+    background: #466bd9;
+    border-radius: 14px;
+    border: 1px solid #204dd287;
+    width: 95px;
+    min-width: 95px;
+    float: right;
+    font-weight: 500;
+    vertical-align: middle;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    padding: 3px 0;
+}
+.productsVisuals .filterBtn:hover{
+    color: white;
+    background: #466bd9;
+}
+
+.productsVisuals ::-ms-clear {
+    display: none;
+}
+
+.productsVisuals *:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.productsVisuals input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: searchfield-cancel-button;
+}
+
+.productsVisuals .nav-tabs {
+    border-bottom: 1px solid #dddfeb !important;
+}
+.productsVisuals .parentWrapper{
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+        padding: 14px 30px;
+}
+.productsVisuals .paginate_button{
+    font-size: 11px;
+}
+
+.productsVisuals .dataTables_wrapper .dataTables_info{
+    padding-top: 0px;
+    color: #656771;
+    font-weight: 500;
+}
+
+.productsVisuals .dataTables_length > label{
+    color: #656771;
+    font-weight: 500;
+}
+.dataTables_wrapper .dataTables_paginate {
+    color: #656771;
+    font-weight: 500;
+}
+.productsVisuals .dataTables_length select{
+    border-radius: 5px;    
+    border: 1px solid #0000001f;
+    color: #656771;
+}
+.productTableCard .card-body{
+    padding:0 !important;
+}
+table.dataTable {
+    border:0px !important;
+}
+table.dataTable.no-footer {
+    border-bottom: 0px;
+}
+.productsVisuals .dataTable td {
+    border: 0.1px solid #f7f7f7 !important;
+    color: #656771 !important;
+    padding: 15px 20px !important;
+    white-space: nowrap;
+}
+.preloaderProduct {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fffffffa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    z-index:9;
+}
+.dataTables_scrollBody thead tr{
+    visibility:collapse !important;
+}
+button#resetBtn {
+    font-size: 13px;
+    font-weight: 500;
+}
+.productsVisuals .dataTable th {
+    color: #8d8f98 !important;
+    padding: 15px 20px !important;
+    white-space: nowrap !important;
+    font-weight: bold !important;
+    background-color: #ececec7a !important;
+    border-color: #e2e1e163 !important;
+}
+.productsVisuals .dataTables_empty{
+    color:red;
+}
+
+.productsVisuals .onEdit{
+    background-color: #0069d96b !important;
+}
+.productsVisuals tr.onEdit{
+    color: #000000 !important;
+}
+.productsVisuals tr.onEdit i{
+    color: #000000!important;
+}
+.productsVisuals table tbody i{
+    color:#0069d9;
+    cursor: pointer;
+    transition:color 0.1s ease;
+}
+.productsVisuals table tbody i:hover{
+    color:#1285ff;
+}
+
+.productsVisuals .mSlabel > div > span:nth-child(1){
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4e73df;
+}
+.productsVisuals .mSlabel > div > span:nth-child(2){
+    vertical-align: middle;
+    font-weight: 500;
+    color: #2222229e;
+    font-size: 14px;
+}
+
+.productsVisuals .msRow{
+    min-height: 170px;
+    max-height: 170px;
+    margin: 0px;
+    /* padding: 5px 0px 0px 20px; */
+    background: #f9f9f9;
+}
+.productsVisuals .showHide{
+    display: none;
+}
+
+.productsVisuals .tokenize{
+    padding: 0px;
+}
+
+.productsVisuals #searchBox{
+    padding: 19px 0px 0px 5px;
+}
+
+.productsVisuals .tokens-container{
+    max-height: 101px;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+.productsVisuals .token{
+    border-radius: 5px !important;
+}
+
+.productsVisuals .iconFlip{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    color: black;
+}
+
+.productsVisuals .applyBtn {
+    font-size: 12px;
+    color: white;
+    background: #466bd9;
+    border-radius: 11px;
+    border: 1px solid #204dd287;
+    width: 95px;
+    min-width: 95px;
+    float: right;
+    font-weight: 500;
+    vertical-align: middle;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.productsVisuals .filterBtns{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    justify-content: flex-end;
+}
+
+.productsVisuals  .selectedFilterDetails #saledd {
+    border: 1.5px solid #0101012b;
+    border-radius: 3px;
+    padding: 0 5px;
+
+}
+
+
+.productsVisuals .selectedFilterDetails p {
+    color: #04a1e8;
+    margin-left: 7%;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    text-shadow: 0px 1px 0px;
+}
+.productsVisuals .cardLayout {
+    margin-bottom: 15px;
+    padding: 10px 10px 10px 10px;
+}
+
+.productsVisuals .filterLayout{
+    height: 50px;
+}
+
+.productsVisuals .selectPosition{
+    margin-left: 50px;
+    margin-top: 4%;
+}
+.productsVisuals .aggregatedGraph{
+    /* border: 1px solid #eae8e8; */
+    margin-left: 27px;
+    display: flex;
+    margin-right: 27px;
+    border-top: 0px;
+    flex-direction: column;
+}
+.productsVisuals .tab-content,
+.productsVisuals .tab-content .tab-pane
+{
+    height: 100%
+}
+.productsVisuals .tab-content {
+    max-height: 300px;
+    min-height: 300px;
+}
+.productsVisuals .tab-content{
+    border: 1px solid #eae8e8;
+    border-top: 0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.tab-content .comingSoon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.productsVisuals .mtop20{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+.productsVisuals .compTabGraph{
+    padding: 5px;
+    border-top: 0px;
+}
+/* .select2-container--default .select2-search--inline .select2-search__field{
+    margin-left: 10px;
+} */
+
+.productsVisuals .select2-selection__rendered {
+    line-height: 31px !important;
+}
+.productsVisuals .select2-container .select2-selection--single {
+    height: 35px !important;
+}
+.productsVisuals .select2-selection__arrow {
+    height: 34px !important;
+}
+
+
+.productsVisuals .over-div {
+    margin: 1px;
+    padding-top:0px ;
+    min-height: 200px;
+    text-align: center;
+    margin-top: 0px !important;
+    /* background-image: linear-gradient(to bottom, rgba(230,226,226),rgba(255,0,0,0)); */
+}
+
+.productsVisuals hr {
+    margin-top: 0rem !important;
+    margin-bottom: 0.1rem !important;
+    border: 0;
+    border-top: 2px solid rgba(66, 109, 152, 1) !important;
+    width: 98%;
+  }
+  .productsVisuals .flexProp{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.productsVisuals div.flexProp > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.productsVisuals #DatePart{
+    text-align: center;
+    color: #8b8c8e;
+    font-weight: 500;
+}
+
+.labelFilter{
+    font-size: 15px;
+    font-weight: 600;
+    color: #8b8c8e;
+}
+/* .select2-choices {
+    min-height: 150px;
+    max-height: 150px;
+    overflow-y: auto;
+  } */
+/* .select2-container--default .select2-results > .select2-results__options {
+    max-height: 200px
+}
+   */
+  /* .select2-arrow, .select2-chosen {
+    padding-top: 6px;
+  } */
+
+  #home .c3-tooltip th {
+    background-color: #ff5733;
+}
+
+.productTableVisuals .c3-tooltip th {
+    background-color: #04a1e8 ;
+    font-size: 14px;
+    padding: 2px 5px;
+    text-align: left;
+    color: #fff;
+}
+.productTableVisuals .c3-axis.c3-axis-x > path {
+    fill: none;
+    stroke: #9e9e9eb0;
+}
+.c3-axis.c3-axis-x > path,
+.c3-axis.c3-axis-y > path
+ {
+    fill: none;
+    stroke: #9e9e9eb0;
+}
+.productTableVisuals .c3 .c3-axis-y-label {
+    font-size: 14px;
+    font-weight: 100;
+}
+.c3 text {
+    fill: #776f6f !important;
+    font-weight: bolder;
+    font-size: 10px;
+}
+.productTableVisuals .c3 text {
+    fill: #776f6f !important;
+    font-weight: bolder;
+    font-size: 10px;
+}
+.productTableVisuals .c3-circle {
+    fill: currentColor;
+    fill: #04a1e8 !important;
+}
+.productTableVisuals .c3-line {
+    stroke: #04a1e8 !important;
+}
+.extraLine {
+    background: #9e9e9eb0;
+    display: block;
+    width: 1.5px;
+    height: 500px;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+}
+.eventLabelContainer {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.eventsLabel {
+    transform: rotate(-90deg) translateX(100px);
+    font-size: 11px;
+    font-weight: 500;
+    color: #776f6f !important;
+    letter-spacing: 1px;
+}
+.productTableVisuals .tick line {
+    display: none;
+}
+
+.productsVisuals line.c3-ygrid {
+    stroke-dasharray: none !important;
+    shape-rendering: auto !important;
+    stroke: #00000012;
+}
+
+.productTableVisuals .model-body{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.productTableVisuals #eventsChart{
+     width: 100%;
+     height: 200px;
+ }
+
+#eventsChart{
+    position: relative;
+}
+#eventsChart .event{
+    background: #9100ff;
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    cursor: pointer;
+    margin-left: 4px;
+}
+
+#eventsChart .event:hover .eventGradient{
+    display: block;
+}
+.eventGradientContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.eventGradient {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    /* background-image: linear-gradient(180deg, #4e73df00 10%, #224abe80 100%); */
+    bottom: 3px;
+    display: none;
+}
+
+.vissualContainer{
+   
+}
+.vissualContainer .mainVisuals{
+    
+
+}
+.vissualContainer .eventsButtons{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.vissualContainer .eventsButtons > div input{
+    margin-right:3px;
+}
+
+.vissualContainer .eventsButtons > div span{
+}
+.vissualContainer .eventsButtons > div {
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.checkboxContainer {
+    display: block;
+    position: relative;
+    padding-left: 27px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+  /* Hide the browser's default checkbox */
+.checkboxContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+  /* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+}
+
+  /* On mouse-over, add a grey background color */
+  .checkboxContainer:hover input ~ .checkmark {
+    /* background-color: #ccc; */
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkboxContainer .reviewEventButton-checkmark {
+    background-color: #b3b3b3;
+  }
+  .checkboxContainer .contentEventButton-checkmark {
+    background-color: #323f8a;
+  }
+  .checkboxContainer .pageNotFoundEventButton-checkmark {
+    background-color: #ff00f4;
+  }
+  .checkboxContainer .andonEventButton-checkmark {
+    background-color: #f44336;
+  }
+  .checkboxContainer .crapEventButton-checkmark {
+    background-color: #224abe;
+  }
+  .checkboxContainer .outOfStockEventButton-checkmark {
+    background-color: #03ffc5;
+  }
+  .checkboxContainer .sellerChangeEventButton-checkmark {
+    background-color: #795548;
+  }
+  .checkboxContainer .priceChangeEventButton-checkmark {
+    background-color: #9c27b0;
+  }
+  .checkboxContainer .advertisingEventButton-checkmark {
+    background-color: #4CAF50;
+  }
+
+  .checkboxContainer input:checked ~ .reviewEventButton-checkmark {
+  }
+  .checkboxContainer input:checked ~ .contentEventButton-checkmark {
+  }
+  .checkboxContainer input:checked ~ .pageNotFoundEventButton-checkmark {
+  }
+  .checkboxContainer input:checked ~ .andonEventButton-checkmark {
+  }
+  .checkboxContainer input:checked ~ .crapEventButton-checkmark {
+  }
+  .checkboxContainer input:checked ~ .outOfStockEventButton-checkmark {
+  }
+  .checkboxContainer input:checked ~ .sellerChangeEventButton-checkmark {
+  }
+  .checkboxContainer input:checked ~ .priceChangeEventButton-checkmark {
+  }
+  .checkboxContainer input:checked ~ .advertisingEventButton-checkmark {
+  }
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkboxContainer .checkmark i {
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkboxContainer input:checked ~ .checkmark i {
+    display: flex;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkboxContainer .checkmark i {
+    width: 100%;
+    font-size: 10px;
+    height: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+  }
+/*Media Quries*/
+
+@media (min-width: 992px)
+{
+    .modal-lg, .modal-xl {
+        max-width: 1100px;
+    }
+}
+
+  .productsVisuals fieldset{
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    margin-bottom: 20px;
+    width: 100%;
+}
+  .productsVisuals .innerPara{
+    padding:5px;
+    font-size: 0.9vw;
+    text-align: center;
+}
+  .productsVisuals legend{
+    font-size: 0.9vw;
+    max-width: 65%;
+    font-weight: 600;
+    width: 10rem;
+    padding: 0px;
+}
+  .productsVisuals .symbFont{
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.productsVisuals #wbr{
+    word-break: break-all;
+    line-height: 1.4;
+}
+
+.dt-checkboxes-cell {
+    background-color: #4d72de;
+}
+
+.productsVisuals #datatable tr td:first-child {
+    background-color: #4d72de;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.section4{
+    margin-bottom: 8%;
+}
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+  background-image: none!important;
+}

@@ -1,0 +1,1 @@
+export const ACTION_SET_IS_ADMIN = "SET_IS_ADMIN";

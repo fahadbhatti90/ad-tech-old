@@ -1,0 +1,93 @@
+.adReport{
+    .rdt_TableRow {
+        font-size: 12px !important;
+        color: rgba(140, 140, 140, 0.87)  !important;
+        cursor: pointer;
+    }
+    .rdt_TableHeadRow {
+        background-color: #f1f1f1;
+    }
+    .rdt_TableHead {
+        .rdt_TableCol {
+            font-size: 13px  !important;
+            font-weight: 500  !important;
+            color: #4c4c4cde  !important;
+        }
+    }
+    // .rdt_TableBody{
+    //     min-height: 450px !important;
+    // }
+    
+    .dataTableContainer{
+        button {
+            background: white;
+            border: none;
+            cursor: pointer;
+            outline: none;
+        }
+    }   
+    
+    .MuiDialog-paperWidthSm {
+        max-width: 725px;
+    }
+}
+
+.viewMetrics{
+    text-decoration: underline;
+    color: #9935c3;
+    cursor: pointer;
+}
+
+.viewMetrics:hover {
+    color: #D790F5;
+}
+
+
+.timepicker{
+    border: 1px solid #cfcbcb !important;
+    border-radius: 25px;
+    padding: 0px 10px !important;
+    &:hover{
+        border: 1px solid #9935c3 !important;
+    }
+}
+
+.selectAll{
+    padding: 0px 20px;
+    border: 1px solid #cfcbcb;
+    border-radius: 25px;
+}
+
+.metricsDiv {
+    min-height: 118px;
+    max-height: 118px;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 0px 10px;
+}
+
+.hfield{
+    min-height: 55px;
+}
+
+.formMargin{
+    margin: 0px 35px;
+}
+
+// .error .ThemeInput > div > div:first-child {
+//     border: 1px solid tomato !important;
+//   }
+//   .error .ThemeSelect > .select__control {
+//     border: 1px solid tomato !important;
+//   }
+  .errorCustom{
+    margin: 0;
+    font-size: 90%;
+    // color: tomato;
+  }
+  .errorCustom .ThemeInput > div > div:nth-child(1) {
+    border: 1px solid tomato !important;
+  }
+  .errorCustom .ThemeSelect > .select__control  {
+    border: 1px solid tomato !important;
+  }

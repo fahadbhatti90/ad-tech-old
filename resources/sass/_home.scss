@@ -1,0 +1,26 @@
+
+@import 'variables';
+.preloaderProduct {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fffffffa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    z-index:9;
+}
+
+.productsVisuals{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+
+
+
+
+/*Media Quries*/

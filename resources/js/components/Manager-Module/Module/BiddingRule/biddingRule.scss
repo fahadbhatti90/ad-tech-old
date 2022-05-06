@@ -1,0 +1,133 @@
+.biddingRule {
+  button{
+    background: #e1a23b;
+    color: white;
+  }
+  .mbi-5{
+    margin-bottom: 1.25rem !important;
+  }
+  .mti-5{
+    margin-top: 1.25rem !important;
+  }
+  .select__placeholder {
+    color: #c1bbbbe0 !important;
+    font-weight: normal !important;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+  }
+  .error {
+    text-transform: capitalize;
+  }
+  .condition{
+    .conditionLabel{
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      border: 1px solid #c3bdbd8c;
+      border-right: 0;
+      display: inline-flex !important;
+    }
+    .basic-single{
+      margin-top:0;
+    }
+    .basic-single > div {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    .ThemeInput > div > div:first-child{
+      margin-top: 0px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+  }
+  .cssEmail{
+    .wrapper {
+      background-color: transparent !important;
+      width: 100% !important;
+      padding: 0 !important;
+      box-shadow: none !important;
+      border-radius: 0.3rem !important;
+    }
+    .parentItem {
+      border: 1px solid #c3bdbd8c;
+      overflow: hidden;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom: 0px;
+      --bg-opacity: 1;
+      background-color: #f7fafc;
+      background-color: rgba(247, 250, 252, var(--bg-opacity));
+      .tag-item {
+        background-color: #d4d5d6;
+        display: inline-block;
+        font-size: 11px;
+        border-radius: 30px;
+        height: 20px;
+        padding: 2.5px 4px 0 1rem;
+        & > .button {
+          background-color: transparent;
+          width: 15px;
+          color: #000;
+          height: 15px;
+          border-radius: 50%;
+          display: inline-block;
+        }
+      }
+    }//parentItem
+    .input {
+      border-color: #571986;
+      width: 100%;
+      height: 35px;
+      padding: 0 1rem;
+      box-sizing: border-box;
+      font: inherit;
+      border: 1px solid #c3bdbd8c;
+      border-top: 0px;
+      color: #565656;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }//.input
+
+  }
+  .andOrGrid{
+    margin: 12px 0;
+    .andOr{
+      flex-direction:row;
+      label{
+        margin-left:50px;
+        & span:last-child{
+          font-size: 0.9rem;
+          font-family: PoppinsNormal, sans-serif !important;
+          font-weight: 400;
+          line-height: 1.5;
+          letter-spacing: 0.00938em;
+        }
+      }
+    }
+  }
+}//bidding Rule
+.biddingRulModel{
+  #customized-dialog-title{
+    // padding:5px !important;
+    text-align: center;
+  }
+  #customized-dialog-title + div{
+    border:0px !important;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    position: relative;
+  }
+  .biddingRule.biddingRulEdit{
+    border-radius: 0;
+    border: none;
+    padding-top: 0;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+}
+// .customFontSize > div:nth-child(1){
+//     font-size: 0.8rem !important;
+//     background: #fff !important;      
+//     border: 1px solid #c3bdbd47;
+// }

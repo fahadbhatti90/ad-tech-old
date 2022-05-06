@@ -1,0 +1,34 @@
+
+.eventsTable{
+
+    .rdt_TableRow {
+        font-size: 12px !important;
+        color: rgba(140, 140, 140, 0.87)  !important;
+        cursor: pointer;
+        &.activeTr{
+            color:#2f2f2fde !important
+        }
+    }
+    .rdt_TableHeadRow {
+        background-color: #f1f1f1;
+    }
+    .rdt_TableHead {
+        .rdt_TableCol {
+            font-size: 13px  !important;
+            font-weight: 500  !important;
+            color: #4c4c4cde  !important;
+        
+        }
+    }
+    .rdt_TableBody{
+    }
+
+    .MuiPaper-rounded {
+        border-radius: 25px;
+    }
+    .eventLogsActions {
+        svg{
+            font-size: 1.3rem;
+        }    
+    }
+}

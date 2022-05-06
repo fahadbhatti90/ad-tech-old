@@ -1,0 +1,28 @@
+.productTableCard .card-header {
+    background: #fff;
+}
+.dataTables_scrollBody{
+    overflow-y: hidden !important;
+    overflow-x: auto !important;
+}
+.dataTables_scrollHead table{
+    margin-top:0px !important
+}
+thead tr .selectContainer:not(.active):hover .checkboxMiniContainer,
+thead tr th .selectContainer.active .checkboxMiniContainer {
+    display: flex !important;
+    opacity: 1  !important;
+    justify-content: center;
+    align-items: center;
+}
+thead tr th .selectContainer:not(.active):hover .checkboxMiniContainer span{
+    background: #2948a1;
+    box-shadow: none;
+}
+thead tr .selectContainer.active,
+thead tr .selectContainer:hover {
+    width: 50px;
+}
+thead tr .selectContainer.active .checkboxMiniContainer span {
+    display: inline-flex;
+}

@@ -1,0 +1,347 @@
+form{
+    width:100%;
+}
+#addProductPreviewForm .form-group {
+    /* margin-bottom: 2rem; */
+}
+#dataTable th {
+    /*color: #4e73df;*/
+}
+.srNoTh{
+    width: 46px;
+}
+.card-header {
+    background-color: #f8f9fc5e;
+}
+.card-body input[type="search"]{
+    height: 2em;
+}
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+    margin: initial;
+}
+legend {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    line-height: inherit;
+    color: inherit;
+    white-space: normal;
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    width: auto;
+}
+.has-danger .custom-control-label {
+    color: #e74a3b;
+}
+.has-danger label:before {
+    border-color: #e74a3b;
+}
+.has-danger fieldset {
+    border-color: #e74a3b;
+}
+.has-success .custom-control-label {
+    color: #858796 !important;
+}
+.has-success label:before {
+    border-color: #b7b9cc !important;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
+    background-color: #34e3a4 !important;
+}
+.has-success fieldset {
+    border-color: #34e3a4 !important;
+}
+.userActions .custom-control {
+    margin: 18.3px 0;
+}
+.events .custom-control {
+    margin: 1.07em 0;
+}
+.datepicker{
+    border-width: 1px !important;
+    border: 1px solid #d1d3e2;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.gj-datepicker-md [role=right-icon] {
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+}
+.datepicker-days td {
+    padding: 5px 12px;
+}
+.datepicker table tr td.disabled, .datepicker table tr td.disabled:hover {
+    background: 0 0;
+    color: #cdcdcd;
+    cursor: default;
+}
+.custonTooltip{
+    /* position: absolute;
+    z-index: 999999;
+    top: 0;
+    display: block;
+    border: 1px solid;
+    padding: 10px;
+    background-color: #4e73df;
+    border-radius: 8px;
+    font-size: 11px;
+    box-shadow: 1px 1px 3px #000;
+    display: none; */
+    position: absolute;
+    z-index: 999999;
+    top: 0;
+    color: #000;
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-size: 11px;
+    box-shadow: 1px 1px 5px #00000070;
+}
+
+.custonTooltip label{
+    color: #434343;
+    font-size: 14px;
+    font-weight: bold;
+}
+.dropDownContainer{
+    position: relative;
+}
+.dropDownContainer .mainDropDown{
+    display: none;
+}
+.dropDownContainer .dropdown-menu {
+    width: 100%;
+    margin: 0;
+}
+
+.dropDownContainer .dropdown-menu li {
+    position: relative;
+    padding: 10px;
+}
+.dropDownContainer .dropdown-menu li:hover {
+    background-color: #0000001a;
+    cursor: pointer;
+}
+.dropDownContainer .dropdown-menu li a{
+    text-decoration: none;
+}
+.dropDownContainer .dropdown-menu.inner
+{
+    display: block;
+    position: relative;
+    max-height: 300px;
+    /* height: 300px; */
+    overflow-y: auto;
+    border: none;
+    min-height: 0px;
+}
+.NoResult{
+    /* display: none; */
+    color:red;
+}
+.notesControls{
+    color: #4e73df;
+    border: 1px solid #fff;
+    width: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 1px 3px 0 3px;
+    text-align: center;
+    background-color: #fff;
+    /* box-shadow: 1px 1px 5px #00000042; */
+    cursor: pointer;
+    margin-left: 3px;
+    float: right;
+    font-size: 11px;
+    border-radius: 3px;
+    transition: box-shadow 0.5s ease-in-out, background 0.1s ease-in-out,color 0.1s ease-in-out;
+}
+span.notesControls:hover {
+    background: #e5e5e5c7;
+    color: #003df1;
+}
+.notesControls .yesControl{
+
+}
+.notesControls .noControl{
+
+}
+.backup {
+    border-bottom-right-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+.userActions .custom-control-label::after,
+.userActions .custom-control-label::before,
+.events .custom-control-label::after,
+.events .custom-control-label::before {
+    top: 0.05rem;
+}
+#addProductPreviewForm input{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: .375rem .75rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6e707e;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d1d3e2;
+    border-radius: .35rem;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    box-sizing: border-box;
+}
+#addProductPreviewForm input:focus{
+    box-shadow:none;
+}
+#asinCustom{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: .375rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6e707e;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d1d3e2;
+    border-radius: .35rem;
+    -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+.topActionsContainer button:hover {
+    color: #fff;
+}
+
+#occurrenceDate{
+    font-size: 1rem;
+    font-weight: 100;
+}
+/*css for email module starts*/
+.select2 {
+    width: 100% !important;
+}
+
+.select2-selection__choice__remove {
+    float: right !important;
+    padding-left: 5px;
+}
+
+.metrics_div {
+    display: none;
+}
+/*css for preloade starts*/
+.preloadOnDropdownChange {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 999;
+    font-size: 19px;
+    height: 100%;
+    background-color: #ffffffc7;
+}
+
+.preloadOnDropdownChange .mainPreloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 999;
+    font-size: 19px;
+}
+/*css for preloade ends*/
+.cursor-pointer{
+    cursor: pointer;
+}
+.selectedMetricsDiv{
+    max-height:300px;
+    overflow:auto;
+}
+.multiple_emails-container input{
+    margin-bottom: 0px !important;
+    padding-top: 2% !important;
+}
+/*css for email module ends*/
+/*change color for multiselect*/
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #6e707e !important;
+}
+/*requirem asterisk css*/
+.required{
+    top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+/*tooltip css for white color starts*/
+.tooltipster-sidetip .tooltipster-box {
+    border-right-color: #fff !important;
+    background: #f9f8f8 !important;
+    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.tooltipster-sidetip .tooltipster-content {
+    text-align: left !important;
+}
+/*.tooltipster-sidetip .tooltipster-content {
+    color: #fff;
+    line-height: 18px;
+    padding: 6px 14px;
+}*/
+.tooltipster-sidetip .tooltipster-content {
+    color: #333 !important;
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+    border-top-color: #f9f8f8;
+    left: 0;
+    top: -3px;
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+    border-top-color: #f9f8f8;
+}
+/*tooltip css for white color ends*/
+.deletePopupText {
+    text-transform: none;
+}
+.ccChangePadding{
+    padding-top: 1rem;
+}

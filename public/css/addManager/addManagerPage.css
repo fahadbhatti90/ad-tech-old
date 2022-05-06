@@ -1,0 +1,23 @@
+#addClientForm , #addAccountForm ,#associateManager,#associateManagerFields{
+    width:100%;
+}
+.ClientSubmitButton{
+    cursor: not-allowed;
+}
+.loggedIn,.loggedOut{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.loggedIn{
+    background: #08ff26;
+    border: 1px solid #21af32;
+}
+.loggedOut{
+    background: #ff1600;
+    border: 1px solid #983d3d80;
+}
+.editing{
+    background: #ffe9b1;
+}

@@ -1,0 +1,31 @@
+/*tooltip css for white color starts*/
+.tooltipster-sidetip .tooltipster-box {
+    border-right-color: #fff !important;
+    background: #f9f8f8 !important;
+    -webkit-box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58, 59, 69, .15) !important;
+    border: none !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.tooltipster-sidetip .tooltipster-content {
+    text-align: left !important;
+}
+/*.tooltipster-sidetip .tooltipster-content {
+    color: #fff;
+    line-height: 18px;
+    padding: 6px 14px;
+}*/
+.tooltipster-sidetip .tooltipster-content {
+    color: #333 !important;
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+    border-top-color: #f9f8f8;
+    left: 0;
+    top: -3px;
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+    border-top-color: #f9f8f8;
+}
+/*tooltip css for white color ends*/

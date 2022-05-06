@@ -1,0 +1,53 @@
+  /* The emerging W3C standard
+   that is currently Firefox-only */
+   * {
+    scrollbar-width: thin;
+    scrollbar-color: #571986 white;
+  }
+  
+  /* Works on Chrome/Edge/Safari */
+  *::-webkit-scrollbar {
+    width: 6px;
+    height: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    // background: #673ab738;
+    background: white;
+    border-radius: 25px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #571986;
+    border-radius: 20px;
+    border: 3px solid #571986;
+  }
+  .MuiDrawer-paper::-webkit-scrollbar-track {
+    background: #571986;
+    border-radius: 25px;
+  }
+  .MuiDrawer-paper::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid white;
+  }
+
+  label{
+    color: #717171;
+    font-size: 0.8rem !important;
+  }
+
+.required-asterisk{
+    height: fit-content;
+    color: #f40606;
+    font-weight: 600;
+    font-size: 18px;
+}
+.btnHover{
+  color: #571986  !important;
+}
+.btnHover:hover {
+  color: #e1a23b !important;
+}
+
+.mBottom{
+  margin-bottom: 10px !important;
+}

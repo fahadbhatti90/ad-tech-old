@@ -1,0 +1,938 @@
+span.tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: inline-block !important;
+  margin: initial !important;
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  white-space: normal;
+  line-break: auto;
+  font-size: 0.875rem;
+  word-wrap: break-word;
+  opacity: 1 !important;
+  background: #fff;
+  color: #222;
+  cursor: pointer;
+  margin-left: 9px !important;
+  padding: 3px 7.5px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 5px #aaa5a557;
+  font-size: 9px;
+  font-weight: 700;
+}
+.tooltipster-sidetip .tooltipster-box {
+  background: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+.tooltipster-sidetip .tooltipster-content {
+  text-align: center;
+  color: #222;
+  line-height: 18px;
+  padding: 6px 14px;
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+  border-top-color: #fff;
+  left: 0;
+  top: -3px;
+}
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-border {
+  border-top-color: #fff;
+}
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border {
+  border-bottom-color: #fff;
+}
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-background {
+  border-bottom-color: #fff;
+}
+.tooltipster-sidetip.tooltipster-bottom .tooltipster-arrow-border {
+  border-bottom-color: #fff;
+}
+
+/**************************tag popup********************************/
+.allASINS .activeTr {
+  background-color: #4e73df80;
+  color: #333;
+  cursor: pointer;
+}
+.allASINS tr:not(.activeTr):hover {
+  color: #4e73df;
+  cursor: pointer;
+  color: #000;
+  cursor: pointer;
+  background-color: #4e73df80;
+}
+
+.tagGroupManager {
+  transition: bottom 0.2s ease;
+  background-color: #fff;
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 60%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 63px;
+  border-radius: 5px;
+  /* overflow: hidden; */
+  z-index: 999999999999;
+  -webkit-box-shadow: 0px 22px 104px -6px rgba(0, 0, 0, 0.34);
+  box-shadow: 0px 22px 104px -6px rgba(0, 0, 0, 0.34);
+}
+.tagGroupManager.active {
+  bottom: 50px;
+}
+.tagGroupManager > .row {
+  margin: 0;
+  height: 100%;
+}
+.progress {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: none; 
+  z-index: 2;
+}
+.tagGroupManager > .row > .progress {
+  position: absolute !important;
+  top: 0px;
+  left: 0;
+}
+.tagGroupManager .corner {
+  text-align: center;
+  position: relative;
+}
+.tagGroupManager > .row .corner div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: 100px;
+  line-height: 1;
+}
+.tagGroupManager > .row .section1 {
+  background: #4e73df;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 100%;
+}
+
+.tagGroupManager > .row .section1 div {
+  font-size: 25px;
+}
+.tagGroupManager > .row .section4 {
+  border-left: 2px solid #f1f1f1;
+  color: #333;
+}
+.tagGroupManager > .row .section4 i:hover {
+  color: #4e73df;
+  cursor: pointer;
+}
+.tagGroupManager > .row .section2 {
+  height: 100%;
+  color: #333;
+  font-size: 22px;
+  padding-left: 20px;
+  padding-top: 7px;
+  font-weight: 100;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.tagGroupManager > .row .section3 {
+  color: #333;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: right;
+  position: relative;
+  display: flex;
+}
+.tagGroupManager > .row .section3 .control.active i {
+  color: #4e73df;
+}
+.tagGroupManager > .row .section3 .control {
+  display: inline-block;
+  height: 100%;
+  padding: 9px 0;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 14px;
+  flex: 1;
+  overflow: hidden;
+}
+.tagGroupManager > .row .section3 .control.stopWorking {
+  opacity: 0.5;
+}
+/* .tagGroupManager > .row .section3 .control.stopWorking::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffffff96;
+    z-index: 9999;
+} */
+.tagGroupManager > .row .section3 .control:hover i {
+  color: #4e73df;
+}
+.tagGroupManager > .row .section3 .control.deleteControl i.far {
+  padding: 5px 0px 8px 0px;
+  font-size: 18px;
+}
+.tagGroupManager > .row .section3 .control.tagControl i {
+  font-size: 24px;
+}
+.tagGroupManager > .row .section3 .control.groupControl i {
+  font-size: 24px;
+}
+.tagGroupManager > .row .section3 .control.settingControl {
+  display: none;
+  margin-left: auto;
+  margin-right: 5px;
+}
+.tagGroupManager > .row .section3 .control div {
+  line-height: 1;
+}
+.tagGroupManager > .row .section3 .tags-container .assignTagButton {
+  background: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 15px;
+  visibility: hidden;
+}
+.tagGroupManager > .row .section3 .tags-container .assignTagButton span:hover {
+  
+  cursor: pointer;
+}
+.tagGroupManager > .row .section3 .tags-container .assignTagButton span {
+  display: block;
+  text-transform: capitalize;
+  background: #4e73df;
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0rem 0.25rem 0 rgba(58, 59, 69, 0.15) !important;
+}
+
+/* width */
+.tagGroupManager > .row .section3 .tags-container .tags::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags::-webkit-scrollbar-track {
+  background: transparent;
+  background-color: transparent;
+  /* -webkit-border-radius: 10px;
+border-radius: 10px;  */
+}
+
+/* Handle */
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags::-webkit-scrollbar-thumb {
+  background: #a6a3a340;
+  /* -webkit-border-radius: 10px; */
+  /* border-radius: 10px; */
+  /* background: #6d6d6d;  */
+}
+
+/* Handle on hover */
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags::-webkit-scrollbar-thumb:hover {
+  background: #a6a3a3;
+}
+.tagGroupManager > .row .section3 .tags-container .tags {
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* position: relative; */
+}
+
+.tagGroupManager > .row .section3 .tags-container {
+  position: absolute;
+  top: -202px;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  overflow: hidden;
+  border-bottom: none !important;
+  box-shadow: 0 0rem 0.25rem 0 rgba(58, 59, 69, 0.15) !important;
+  display: none;
+  z-index: 9999999999999999999999;
+}
+.tagGroupManager > .row .section3 .tags-container .tags .editBox {
+  margin-top: 5px;
+  margin-left: 4px;
+  margin-right: 5px;
+}
+
+.tagGroupManager > .row .section3 .tags-container .tags .editBox .row {
+  padding-top: 0px;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox
+  .row
+  .tag-left {
+  padding-top: 5px;
+  /* width: 100% !important; */
+  padding-bottom: 3px;
+  /* max-width: 100% !important; */
+  /* flex: 0 0 78%; */
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+/*On Hover Tags Edit Delete Controls*/
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox:not(.active):not(.edit):hover
+  .row
+  .tag-left {
+  border: 1px dotted;
+  position: relative;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox:not(.active):not(.edit):hover
+  .row
+  .tag-right
+  i:nth-child(1) {
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  font-size: 18px;
+  transform: translate(-80%, -50%);
+  cursor: pointer;
+  display: inline-block;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox:not(.active):not(.edit):hover
+  .row
+  .tag-right {
+  background-color: #eaecf4;
+  border: 1px solid #eaecf4;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox:not(.active):not(.edit):hover
+  .row
+  .tag-right
+  span {
+  display: none;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox:not(.active):not(.edit):hover
+  .row
+  .tag-right
+  i.fa-trash-alt {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  font-size: 14px;
+  transform: translate(-30%, -50%);
+  cursor: pointer;
+  display: inline-block;
+}
+/*On Hover Tags Edit Delete Controls*/
+
+/*On Edit Button Press*/
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox.edit
+  .row
+  .tag-left {
+  border: 1px dotted;
+  position: relative;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox.edit
+  .row
+  .tag-right
+  i:nth-child(1) {
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  font-size: 18px;
+  transform: translate(-80%, -50%);
+  cursor: pointer;
+  display: inline-block;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox.edit
+  .row
+  .tag-left {
+  /* flex: 0 0 95% !important; */
+  border: none;
+  text-align: center;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox.edit
+  .row
+  .tag-right {
+  background-color: #eaecf4;
+  border: 1px solid #eaecf4;
+  max-width: 0;
+  display: none;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox.edit
+  .row
+  .tag-right
+  span {
+  display: none;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox.edit
+  .row
+  .tag-right
+  i.fa-trash-alt {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+  font-size: 14px;
+  transform: translate(-30%, -50%);
+  cursor: pointer;
+  display: inline-block;
+}
+/*On Edit Button Press*/
+.tagGroupManager > .row .section3 .tags-container .tags .editBox .row > input {
+  padding: 0 0 0 0;
+  position: absolute;
+  margin: 0;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+  left: 13px;
+  width: 90%;
+  max-width: 100%;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox
+  .row
+  .tag-right {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  /* max-width: 20%; */
+  padding-right: 0;
+  position: relative;
+  padding-left: 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox
+  .row
+  .tag-right
+  i {
+  display: none;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox.active
+  .row
+  .tag-left,
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox.active
+  .row
+  .tag-right {
+  background: #4e73df;
+  color: #fff;
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox.active
+  .row
+  .tag-left
+  span,
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tags
+  .editBox.active
+  .row
+  .tag-right
+  span {
+  color: #fff;
+}
+.tagGroupManager > .row .section3 .tags-container .tags .coverContainer {
+  background: #ffffffb0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+.tagGroupManager > .row .section3 .tags-container .tag {
+  padding: 11px 0 0 0;
+  margin: 0;
+  position: relative;
+}
+.tagGroupManager > .row .section3 .tags-container .tag .deleteContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffa8;
+  z-index: 1;
+  display: none;
+}
+.tagGroupManager > .row .section3 .tags-container .tag .deleteContainer i {
+  font-size: 13px;
+  position: absolute;
+  bottom: 5px;
+  right: 23px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  line-height: 1;
+  width: 20px;
+  height: 20px;
+  user-select: none;
+  font-weight: bold;
+  padding: 2.3px 3px;
+  background: #4e73df;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.tagGroupManager
+  > .row
+  .section3
+  .tags-container
+  .tag
+  .deleteContainer
+  i:active {
+  outline: 0;
+  background: #ffffff;
+  color: #4e73df;
+}
+.tagGroupManager > .row .section3 .tags-container .tag:hover .deleteContainer {
+  display: block;
+}
+.tagGroupManager > .row .section3 .tags-container .tag .tag-left {
+  text-align: left;
+}
+.tagGroupManager > .row .section3 .tags-container .tag .tag-left span {
+  color: #333;
+  cursor: pointer;
+}
+.tagGroupManager > .row .section3 .tags-container .tag .tag-left span:hover {
+  text-decoration: underline;
+}
+.tagGroupManager > .row .section3 .tags-container .tag .tag-right {
+  text-align: right;
+}
+.tagGroupManager > .row .section3 .tags-container .tag .tag-right span {
+  font-size: 13px;
+  color: #333;
+}
+.tagGroupManager > .row .section3 .tags-container .title {
+  background: #fff;
+  text-align: left;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+.tagGroupManager > .row .section3 .tags-container .title p {
+  margin: 0;
+}
+.statsSection {
+  transition: transform 0.2s ease;
+  /* transform: translateY(50px); */
+}
+.statsSection.move {
+  transform: translateY(-70px);
+}
+.inputSection {
+  transition: transform 0.2s ease;
+  /* transform: translateY(50px); */
+}
+.inputSection.move {
+  transform: translateY(-54px);
+}
+.itemCounts {
+  line-height: 0.7;
+  display: flex;
+}
+
+.itemCounts span.itemAdded {
+  width: 8px;
+  height: 8px;
+  background-color: #4e73df;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 7px 2px;
+}
+.tagGroupManager > .row .section3 .controlsContainer {
+  flex: 1;
+}
+.itemCounts span.extraDotCounter {
+  font-size: 12px;
+  color: #808080;
+  height: 8px;
+  display: inline-block;
+  margin: 7px 2px;
+}
+
+#tag {
+  font-size: 27px;
+}
+#tag.invalid {
+  border-bottom: 1px solid #e74a3b;
+  -webkit-box-shadow: 0 1px 0 0 #e74a3b;
+  box-shadow: 0 1px 0 0 #e74a3b;
+  color: #e74a3b;
+}
+#dataTable th {
+  color: #4e73df;
+}
+.tagToolTip > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.tagToolTip > span > span.unAssignSingleTag {
+  visibility: visible !important;
+}
+.tagToolTip > span > span.delete {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.tagToolTip > span > span.unAssignSingleTag {
+  display: inline-flex;
+  visibility: hidden;
+  border: 1.9px solid #e1d9d9;
+  border-radius: 3px;
+  color: #4e73df;
+  cursor: pointer;
+  margin-left: 3px;
+  margin-bottom: 2px;
+  padding: 1px;    
+  user-select: none;
+}
+.tagToolTip > span >span.unAssignSingleTag i {
+  font-size: 12px;
+  font-weight: bold;
+}
+.tooltipProgressBar{
+  display:block;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.card-header {
+  background-color: #f8f9fc5e;
+}
+.card-body input[type="search"] {
+  height: 2em;
+}
+.allASINS td:first-child,
+#dataTable th:first-child {
+  position: relative;
+}
+.selectContainer {
+  border: none;
+  overflow: hidden;
+  height: 100%;
+  color: #000;
+  display: block;
+  position: absolute;
+  width: 8px;
+  top: 0;
+  left: 0;
+  transition: width 0.1s ease;
+  background-color: #4e73df;
+}
+.checkboxMiniContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
+  opacity: 0;
+  transition: display 0.1s ease;
+  
+}
+.allASINS tr:not(.activeTr):hover .selectContainer {
+  width: 50px;
+}
+/* .allASINS tr:not(.activeTr):hover{
+    width: 50px;
+} */
+.allASINS tr:not(.activeTr):hover .checkboxMiniContainer {
+  display: flex;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+}
+.allASINS tr:not(.activeTr):hover .checkboxMiniContainer span {
+  background: #2948a1;
+  box-shadow: none;
+}
+.allASINS tr:not(.activeTr):hover .checkboxMiniContainer span i {
+  display: none;
+}
+th .selectContainer:not(.active):hover {
+  width: 50px;
+}
+th .selectContainer:not(.active):hover .checkboxMiniContainer {
+  display: flex;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+}
+th .selectContainer:not(.active):hover .checkboxMiniContainer span {
+  background: #2948a1;
+  box-shadow: none;
+}
+th .selectContainer:not(.active):hover .checkboxMiniContainer span i {
+  display: none;
+}
+
+th .selectContainer.active {
+  width: 50px;
+}
+th .selectContainer.active .checkboxMiniContainer {
+  display: flex;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+th .selectContainer.active .checkboxMiniContainer span {
+  display: inline-flex;
+}
+.allASINS tr.activeTr .selectContainer {
+  width: 50px;
+}
+.allASINS tr.activeTr .selectContainer .checkboxMiniContainer {
+  display: flex;
+  opacity: 1;
+  justify-content: center;
+  align-items: center;
+}
+.allASINS tr.activeTr .checkboxMiniContainer span {
+  display: inline-flex;
+}
+.checkboxMiniContainer span {
+  border: 0.1px solid;
+    width: 17px;
+    text-align: center;
+    height: 17px;
+    color: #4e73df;
+    background: #fff;
+    line-height: 1;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  /* -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); */
+}
+.checkboxMiniContainer i {
+  font-size: 11px;
+  font-weight: bold;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+}
+.selectContainer::before {
+  border: 1px solid;
+  width: 50px;
+  height: 50px;
+  color: #000;
+  display: block;
+}
+
+td:focus {
+  outline: none;
+}
+@media only screen and (min-width: 300px) {
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (max-width: 598px) {
+  #tag {
+    font-size: 19px;
+  }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (max-width: 768px) {
+  .tagGroupManager > .row .section3 .control.settingControl {
+    display: inline-block;
+  }
+  .tagGroupManager > .row .section3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .tagGroupManager > .row .section3 .controlsContainer {
+    position: absolute;
+    top: -246px;
+    right: 0;
+    border: 1px solid #fff;
+    padding: 0 9px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0rem 0rem 0.25rem 0rem rgba(58, 59, 69, 0.15) !important;
+    flex: 1;
+    height: 244.9px;
+    border-top-right-radius: 5px;
+    display: none;
+  }
+  .tagGroupManager > .row .section3 .tags-container {
+    position: absolute;
+    top: -1px;
+    min-width: 275px;
+    width: auto !important;
+    left: -276px;
+    right: auto;
+    background: #fff;
+    border-top-right-radius: 0;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+    border-bottom: none !important;
+    box-shadow: -0.2rem 0rem 0.25rem 0 rgba(58, 59, 69, 0.15) !important;
+  }
+  .tagGroupManager > .row .section2 {
+    height: 100%;
+    color: #333;
+    padding-left: 9px;
+    padding-top: 5px;
+  }
+  .tagGroupManager > .row .section3 .tags-container .tags {
+    height: 203.9px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .tagGroupManager > .row .section3 .control {
+    display: block;
+    text-align: center;
+    margin: 0;
+    height:auto;
+  }
+  .tagGroupManager {
+    max-width: 95% !important;
+  }
+  .inputSection.move {
+    transform: translateY(-50px);
+  }
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .tagGroupManager {
+    max-width: 85% !important;
+  }
+}
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (max-width: 1024px) {
+  .tagGroupManager {
+    max-width: 70%;
+  }
+}
+@media only screen and (max-width: 1265px) {
+  .tagGroupManager {
+    max-width: 70%;
+  }
+}
+/**************************tag popup********************************/

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 17 17">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle id="Path_23" data-name="Path 23" class="cls-1" cx="7.672" cy="7.672" r="6.672"/>
+  <path id="Path_24" data-name="Path 24" class="cls-2" d="M16,16l-3.625-3.625"/>
+</svg>

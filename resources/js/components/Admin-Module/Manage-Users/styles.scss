@@ -1,0 +1,80 @@
+.managerUser{
+    .rdt_TableRow {
+        font-size: 12px !important;
+        color: rgba(140, 140, 140, 0.87)  !important;
+        cursor: pointer;
+    }
+    .rdt_TableHeadRow {
+        background-color: #f1f1f1;
+    }
+    .rdt_TableHead {
+        .rdt_TableCol {
+            font-size: 13px  !important;
+            font-weight: 500  !important;
+            color: #4c4c4cde  !important;
+        }
+    }
+    // .rdt_TableBody{
+    //     min-height: 450px !important;
+    // }
+    
+    .dataTableContainer{
+        button {
+            background: white;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            padding: 5px;
+        }
+    }   
+    
+    .MuiDialog-paperWidthSm {
+        max-width: 725px;
+    }
+
+    .actionBtnsCenter{
+        justify-content: center !important;
+    }
+    // get the variable color
+    .btnHover{
+        color: #571986  !important;
+    }
+    .btnHover:hover {
+        color: #e1a23b !important;
+    }
+}
+
+.hfield{
+    min-height: 55px;
+}
+
+.formMargin{
+    margin: 0px 35px;
+}
+
+.errorCustom{
+    margin: 0;
+    font-size: 90%;
+    // color: tomato;
+  }
+  .errorCustom .ThemeInput > div > div:nth-child(1) {
+    border: 1px solid tomato !important;
+  }
+  .errorCustom .ThemeSelect > .select__control  {
+    border: 1px solid tomato !important;
+  }
+  .ulist{
+    max-height: 100px;
+    overflow: scroll;
+    border: 1px solid #0000000d;
+    border-radius: 10px;
+}
+.Select.is-disabled > .Select-control {
+    cursor: not-allowed;
+    color: #aaa !important;
+  }
+    
+  .Select.is-disabled {
+    color: #aaa !important;
+    background: darkgray  !important;
+  }

@@ -1,0 +1,77 @@
+
+.addScheduleForm{
+    .select__menu-list{
+      max-height:150px;
+    }
+}
+
+.asinsScrapingRadioButtons {
+  fieldset {
+    display: flex;
+    padding: 15px 0 0px 0;
+    background: transparent;
+      & > div {
+        justify-content: space-around;
+      }
+  }
+}
+.searchRankScheduleFrom{
+  .MuiTextField-root{
+    z-index: 2;
+  }
+}
+.searchRankSchedules{
+    
+    .rdt_TableRow {
+        font-size: 12px !important;
+        color: rgba(140, 140, 140, 0.87) !important;
+    }
+    
+    .rdt_TableHeadRow {
+        background-color: #f1f1f1;
+    }
+    
+    .rdt_TableHead {
+        .rdt_TableCol {
+          font-size: 13px !important;
+          font-weight: 500 !important;
+          color: #4c4c4cde !important;
+        }
+    }
+    .btnHover{
+        color: #571986  !important;
+    }
+    .btnHover:hover {
+        color: #e1a23b !important;
+    }
+    .deleteScheduleButton {
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+    
+      
+    .MuiPaper-rounded {
+        border-radius: 25px;
+    }
+    
+    .overlay {
+      background: #00000000;
+      transition: background 0.4s ease;
+      z-index: -1;
+    }
+
+    .scheduleControls {
+      .scheduleTimeLoader {
+        span {
+        }
+      }
+    }
+}
+
+.AddSearchRankScheduleModel{
+  #customized-dialog-title{
+      padding: 23px 16px 0 16px !important;
+  }
+}
+    
